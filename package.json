@@ -1,0 +1,34 @@
+{
+  "name": "chile-runnig",
+  "version": "0.0.1",
+  "description": "Medio de Runners",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Mediatrends/Chilerunning.git"
+  },
+  "keywords": [
+    "Chile",
+    "Runners",
+    "Running"
+  ],
+  "author": "Media Trends",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mediatrends/Chilerunning/issues"
+  },
+  "homepage": "https://github.com/Mediatrends/Chilerunning",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-compass": "^0.8.0",
+    "grunt-contrib-imagemin": "^0.7.1",
+    "grunt-contrib-jade": "^0.12.0",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-uglify": "^0.5.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-html-minify": "^0.3.1"
+  }
+}
