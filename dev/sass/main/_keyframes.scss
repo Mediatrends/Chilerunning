@@ -1,0 +1,15 @@
+@include keyframe(bg_header){
+	from{
+		background:{color:transparent;}
+	}
+	to{
+		background:{color:#F4F4F4;}
+	}
+}
+@include keyframe(bg_header_closer){
+	from{
+		background:{color:#F4F4F4;}
+	}
+	to{
+		background:{color:transparent;}	}
+}

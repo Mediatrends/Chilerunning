@@ -1,0 +1,112 @@
+//MOBILE FIRST
+@include gridle_register_state( xs, (
+    max-width : 768px
+) );
+@include gridle_register_state( sm, (
+    min-width : 768px
+) );
+@include gridle_register_state( md, (
+    min-width : 992px
+) );
+@include gridle_register_state( lg, (
+    min-width : 1200px
+) );
+
+//WEBKIT
+@include gridle_register_state(webkit_brw, (screen and (-webkit-min-device-pixel-ratio:0)));
+//Text Align
+.text-center{
+	text-align:$text-center;
+}
+.text-left{
+	text-align:$text-left;
+}
+.text-right{
+	text-align:$text-right;
+}
+//Padding y Margins
+.paddings{
+	padding:0 !important;
+}
+.margins{
+	margin:0 !important;
+}
+
+//hidden visible
+.visible{
+	visibility:$visible;
+}
+.hidden{
+	visibility:$hidden;
+}
+.hide{
+	display:$hide;
+}
+//Responsive img
+.responsive-img{
+	display:block;
+	width:100%;
+	height: auto;
+}
+
+//Menu inline
+.inline{
+	list-style:none;
+	@extend .paddings;
+	@extend .margins;
+	li{
+		display:$inline;
+	}
+}
+//Container set
+body{
+	@extend .margins;
+	@extend .paddings;
+}
+.content{
+	@include gridle_container();
+	@include gridle_centered();
+	max-width:1170px;
+	position: relative;
+	z-index: 9;
+}
+
+//PALCEHOLDER
+@mixin placeholder {
+    &::-webkit-input-placeholder {
+        @content;
+    }
+    &:-moz-placeholder { /* Firefox 18- */
+        @content;
+    }
+    &::-moz-placeholder {  /* Firefox 19+ */
+        @content;
+    }
+    &:-ms-input-placeholder {
+        @content;
+    }
+}
+@mixin keyframe ($animation_name) {
+	@-webkit-keyframes $animation_name {
+		@content;
+	}
+	 
+	@-moz-keyframes $animation_name {
+		@content;
+	}
+	 
+	@-o-keyframes $animation_name {
+		@content;
+	}
+	 
+	@keyframes $animation_name {
+		@content;
+	}
+}
+//LOAD
+/*main{
+	@extend .hide;
+}
+footer{
+	@extend .hide;
+}*/

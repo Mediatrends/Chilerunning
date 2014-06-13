@@ -1,6 +1,5 @@
 .DS_Store
 .sass-cache/
 .sass-cache
-dev/
 node_modules/
 bower_components/

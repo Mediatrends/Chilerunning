@@ -1,0 +1,75 @@
+doctype html
+html
+	include header
+	body
+		header.header
+			.logo
+				img(src='../img/logo.gif')
+			.ad_header
+				.cont_ad(style='width:728px;height:90px;margin:0 auto;background-color:#BFDFFF;')
+			.control_header
+				.enter_menu
+					img(src='../img/icon_menu.gif')
+			nav
+				ul
+					li.entretenimiento
+						a entretenimiento
+					li.zapatillas
+						a zapatillas
+					li.salud
+						a salud
+					li.nutricion
+						a nutricion
+					li.calendario
+						a calendario
+					li.motivacion
+						a motivacion
+					li.noticias
+						a noticias
+					li.videos
+						a videos
+			.tools
+				.search
+					button(type='submite')
+					input(type='text',placeholder='Buscar')
+				.redes-sociales
+					p Encuentranos:
+					ul
+						li.red-go
+							a
+						li.red-pi
+							a
+						li.red-tw
+							a
+						li.red-fb
+							a
+		main
+			section.slider_head
+				article.cont_img_slider
+					header
+					main
+						h2 5 COSAS QUE LOS CORREDORES DEBEMOS SABER ACERCA DE LAS RODILLAS
+						ul
+							li 
+								p 
+									i.fa.fa-pencil
+									span Camilo Escalona
+							li
+								p 
+									i.fa.fa-eye
+									span 13000
+							li
+								p 
+									i.fa.fa-share-alt
+									span 300
+					footer
+						.more_read leer mas
+						.nav_slider
+							ul
+								li
+									i.fa.fa-circle
+								li
+									i.fa.fa-circle
+								li
+									i.fa.fa-circle
+		include footer

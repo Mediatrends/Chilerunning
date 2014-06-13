@@ -1,0 +1,183 @@
+.header{
+	@include gridle(12);
+	@include gridle_parent();
+	height: 120px;
+	@include gridle_clear(both);
+	overflow:hidden;
+	position:relative;
+	z-index:9;
+	&.bg_header{
+		@include animation(1s bg_header normal forwards);
+	}
+	&.bg_header_closer{
+		@include animation(1s bg_header_closer normal forwards);
+	}
+	.logo{
+		@include gridle(6,xs);
+		@include gridle(1,sm);
+		@include gridle(2,md);
+		@include gridle_parent();
+		img{
+			margin: 10px 0 0 10px;
+			@extend .responsive-img;
+			max-width: 100px;
+		}
+	}
+	.ad_header{
+		@include gridle_hide(xs);
+		@include gridle(10,sm);
+		@include gridle(8,md);
+		@include gridle_parent(sm);
+		@extend .text-center;
+		padding-top:10px;
+		.cont_ad{
+			padding-top:5px;
+			@include gridle_hide(xs);
+		}
+	}
+	.control_header{
+		@include gridle(6,xs);
+		@include gridle(1,sm);
+		@include gridle(2,md);
+		@include gridle_parent(sm);
+		padding-top:10px;
+		height:110px;
+		display: table;
+		.enter_menu{
+			display: table-cell;
+			vertical-align: middle;
+			img{
+				@include gridle_float(right);
+				margin-right:20px;
+				display: block;
+			}
+		}
+	}
+	nav{
+		@include gridle(12);
+		@include gridle_clear(both);
+		@extend .text-center;
+		margin-top: 20px;
+		@include opacity(0);
+		ul{
+			@extend .inline;
+			li{
+				padding:0 14px;
+				background: {image:url(#{$url_path}icons_nav.gif);repeat:no-repeat;}
+				&.entretenimiento{
+					background: {position:70px 0;}
+				}
+				&.zapatillas{
+					background: {position:-90px 0;}
+				}
+				&.salud{
+					background: {position:-192px 0;}
+				}
+				&.nutricion{
+					background: {position:-260px 0;}
+				}
+				&.calendario{
+					background: {position:-363px 0;}
+				}
+				&.motivacion{
+					background: {position:-476px 0;}
+				}
+				&.noticias{
+					background: {position:-599px 0;}
+				}
+				&.videos{
+					background: {position:-685px 0;}
+				}
+				a{
+					text:{transform:uppercase;}
+					display: block;
+					width: 100%;
+					height: 100%;
+					padding:30px 0 0;
+					color:$text_color;
+					font:{family:$font_ubuntu;weight:300;}
+					&:hover{
+						color:$sec_color;
+					}
+				}
+			}
+		}
+	}
+	.tools{
+		@include gridle_clear(both);
+		@include gridle_parent();
+		@include gridle(12);
+		@include opacity(0);
+		.search{
+			@include gridle(6);
+			@include gridle_parent();
+			@extend .text-right;
+			padding-right:30px !important;
+			input[type='text']{
+				border: 0;
+				background: {color:#ccc;}
+				height:40px;
+				width: 90%;
+				display: inline-block;
+				margin: 0 10px 10px 0;
+				padding-left:10px;
+				@include gridle_float(right);
+				color:#fff;
+				@include placeholder{
+					color:#fff;
+					opacity: 1;
+					font: {family:$font_ubuntu;weight:300;size:18px;style:italic;}
+				}
+			}
+			button[type='submite']{
+				background: {image:url(#{$url_path}icon_lupa.gif);repeat:no-repeat;color:transparent;}
+				height: 29px;
+				width:28px;
+				border:0;
+				display: inline-block;
+				margin-top:5px;
+				@include gridle_float(right);
+			}
+		}
+		.redes-sociales{
+			@include gridle(6);
+			@include gridle_parent();
+			padding-left:30px !important;
+			p{
+				@include gridle(4);
+				@extend .margins;
+				@extend .paddings;
+				font:{family:$font_ubuntu;size:18px;style:italic;weight:300;}
+				color:$text_color;
+				padding-top:10px !important;
+				@extend .text-right;
+			}
+			ul{
+				@extend .inline;
+				@include gridle(8);
+				li{
+					background: {image:url(#{$url-path}icon_rr-ss.gif);repeat:no-repeat;}
+					padding:23px 25px;
+					margin:0 15px;
+					a{
+						display: block;
+						width:100%;
+						height: 100%;
+					}
+					&.red-go{
+						background: {position:0 0;}
+					}
+					&.red-pi{
+						background: {position:-95px 0;}
+					}
+					&.red-tw{
+						background: {position:-189px 0;}
+					}
+					&.red-fb{
+						background: {position:-283px 0;}
+					}
+				}
+			}
+		}
+	}
+}
