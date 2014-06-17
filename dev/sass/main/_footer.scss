@@ -1,3 +1,72 @@
-footer{
-	
+#footer{
+	@include gridle(12);
+	background:{color:$pri_color;}
+	margin-top:-120px;
+	color:#fff;
+	padding: 20px 0;
+	.logo{
+		@include gridle(1);
+		svg{
+			max-width: 80%;
+			use{
+				fill:#fff;
+			}
+		}
+	}
+	.about{
+		@include gridle(6);
+		h4{
+			font:{size:18px;family:$font_ubuntu;weight:300;}
+			color:#fff;
+			margin: 0 0 5px;
+			text:{transform:uppercase;}
+		}
+		p{
+			font:{size:12px;weight:400;family:$font_ubuntu;style:italic;}
+			color:#fff;
+			text:{align:justify;}
+			padding-left:10px;
+		}
+	}
+	.category{
+		@extend .about;
+		@include gridle(3);
+		ul{
+			list:{style:none;}
+			@extend .margins;
+			@extend .paddings;
+			text:{transform:uppercase;}
+			font:{family:$font_ubuntu;size:12px;weight:400;}
+			li{
+				@include gridle(6);
+				margin-bottom:10px;
+				a{
+					text:{decoration:none;}
+					color:#fff;
+					&:hover{
+						color:$sec_color;
+					}
+				}
+			}
+		}
+	}
+	.contact{
+		@extend .about;
+		@include gridle(2);
+		.btn{
+			background: {color:#fff;}
+			@include border-radius(5px);
+			padding:10px 0;
+			margin: 10px 0;
+			max-width:203px;
+			color:$pri_color;
+			font: {family:$font_ubuntu;weight:300;size:11px}
+			text:{transform:uppercase;}
+			@extend .text-center;
+			&:hover{
+				background: {color:$sec_color;}
+				color:#fff;
+			}
+		}
+	}
 }

@@ -17,10 +17,13 @@
 		@include gridle(1,sm);
 		@include gridle(2,md);
 		@include gridle_parent();
-		img{
+		svg{
 			margin: 10px 0 0 10px;
 			@extend .responsive-img;
 			max-width: 100px;
+			use{
+				fill:$pri_color;
+			}
 		}
 	}
 	.ad_header{
@@ -46,10 +49,14 @@
 		.enter_menu{
 			display: table-cell;
 			vertical-align: middle;
-			img{
+			svg{
 				@include gridle_float(right);
 				margin-right:20px;
 				display: block;
+				max-width: 30px;
+				use{
+					fill:$pri_color;
+				}
 			}
 		}
 	}

@@ -2,74 +2,198 @@ doctype html
 html
 	include header
 	body
+		include svg_graph
 		header.header
-			.logo
-				img(src='../img/logo.gif')
-			.ad_header
-				.cont_ad(style='width:728px;height:90px;margin:0 auto;background-color:#BFDFFF;')
-			.control_header
-				.enter_menu
-					img(src='../img/icon_menu.gif')
-			nav
-				ul
-					li.entretenimiento
-						a entretenimiento
-					li.zapatillas
-						a zapatillas
-					li.salud
-						a salud
-					li.nutricion
-						a nutricion
-					li.calendario
-						a calendario
-					li.motivacion
-						a motivacion
-					li.noticias
-						a noticias
-					li.videos
-						a videos
-			.tools
-				.search
-					button(type='submite')
-					input(type='text',placeholder='Buscar')
-				.redes-sociales
-					p Encuentranos:
+				.logo
+					svg(viewBox='0 0 324.688 324.688')
+						use(xlink:href='#svg_logo')
+				.ad_header
+					.cont_ad(style='width:728px;height:90px;margin:0 auto;background-color:#BFDFFF;')
+				.control_header
+					.enter_menu
+						svg(viewBox='0 0 80 70')
+							use(xlink:href='#svg_icon_menu')
+				nav
 					ul
-						li.red-go
-							a
-						li.red-pi
-							a
-						li.red-tw
-							a
-						li.red-fb
-							a
-		main
-			section.slider_head
-				article.cont_img_slider
-					header
-					main
-						h2 5 COSAS QUE LOS CORREDORES DEBEMOS SABER ACERCA DE LAS RODILLAS
+						li.entretenimiento
+							a entretenimiento
+						li.zapatillas
+							a zapatillas
+						li.salud
+							a salud
+						li.nutricion
+							a nutricion
+						li.calendario
+							a calendario
+						li.motivacion
+							a motivacion
+						li.noticias
+							a noticias
+						li.videos
+							a videos
+				.tools
+					.search
+						button(type='submite')
+						input(type='text',placeholder='Buscar')
+					.redes-sociales
+						p Encuentranos:
 						ul
-							li 
-								p 
-									i.fa.fa-pencil
-									span Camilo Escalona
-							li
-								p 
-									i.fa.fa-eye
-									span 13000
-							li
-								p 
+							li.red-go
+								a
+							li.red-pi
+								a
+							li.red-tw
+								a
+							li.red-fb
+								a
+		main.cont_all
+				section.slider_head
+					article.cont_img_slider
+						header
+						main
+							h2 5 COSAS QUE LOS CORREDORES DEBEMOS SABER ACERCA DE LAS RODILLAS
+							ul
+								li 
+									p 
+										i.fa.fa-pencil
+										span Camilo Escalona
+								li
+									p 
+										i.fa.fa-eye
+										span 13000
+								li
+									p 
+										i.fa.fa-share-alt
+										span 300
+						footer
+							.more_read leer mas
+							.nav_slider
+								ul
+									li
+										i.fa.fa-circle
+									li
+										i.fa.fa-circle
+									li
+										i.fa.fa-circle
+				section.ad
+					.open_close_ad 
+						span.close Cerrar Publicidad
+						span.open.hide Abrir Publicidad
+						i.fa.fa-times
+					.cont_ad_middle
+						.ad-300x250
+				section.cont_post
+					article.box_post
+						a(href='#')
+							main.post
+								h3 5 COSAS QUE LOS CORREDORES DEBEMOS SABER ACERCA DE LAS RODILLAS
+								.data
+									i.fa.fa-calendar-o
+									span 30/06/2014
 									i.fa.fa-share-alt
 									span 300
-					footer
-						.more_read leer mas
-						.nav_slider
-							ul
-								li
-									i.fa.fa-circle
-								li
-									i.fa.fa-circle
-								li
-									i.fa.fa-circle
+								.more leer mas
+					article.box_post
+						a(href='#')
+							main.post
+								h3 5 COSAS QUE LOS CORREDORES DEBEMOS SABER ACERCA DE LAS RODILLAS
+								.data
+									i.fa.fa-calendar-o
+									span 30/06/2014
+									i.fa.fa-share-alt
+									span 300
+								.more leer mas
+					article.box_post
+						a(href='#')
+							main.post
+								h3 5 COSAS QUE LOS CORREDORES DEBEMOS SABER ACERCA DE LAS RODILLAS
+								.data
+									i.fa.fa-calendar-o
+									span 30/06/2014
+									i.fa.fa-share-alt
+									span 300
+								.more leer mas
+					article.box_post
+						a(href='#')
+							main.post
+								h3 5 COSAS QUE LOS CORREDORES DEBEMOS SABER ACERCA DE LAS RODILLAS
+								.data
+									i.fa.fa-calendar-o
+									span 30/06/2014
+									i.fa.fa-share-alt
+									span 300
+								.more leer mas
+					article.box_post
+						a(href='#')
+							main.post
+								h3 5 COSAS QUE LOS CORREDORES DEBEMOS SABER ACERCA DE LAS RODILLAS
+								.data
+									i.fa.fa-calendar-o
+									span 30/06/2014
+									i.fa.fa-share-alt
+									span 300
+								.more leer mas
+					article.box_post
+						a(href='#')
+							main.post
+								h3 5 COSAS QUE LOS CORREDORES DEBEMOS SABER ACERCA DE LAS RODILLAS
+								.data
+									i.fa.fa-calendar-o
+									span 30/06/2014
+									i.fa.fa-share-alt
+									span 300
+								.more leer mas
+				section.calendar
+					article
+						.calen_destacado
+							h3 MARATON RAPA NUI 2014
+							.date
+								i.fa.fa-calendar-o
+								span junio 2014
+							.place 
+								i.fa.fa-map-marker
+								span Rapa Nui
+							.more leer mas
+					aside
+						ul
+							li
+								a(href='#')
+									h3 CORRIDA NOCTURNA PDI
+									.place 
+										i.fa.fa-map-marker
+										span Rapa Nui
+									.date
+										i.fa.fa-calendar-o
+										span junio 2014
+									.more leer mas
+							li
+								a(href='#')
+									h3 CORRIDA NOCTURNA PDI
+									.place 
+										i.fa.fa-map-marker
+										span Rapa Nui
+									.date
+										i.fa.fa-calendar-o
+										span junio 2014
+									.more leer mas
+							li
+								a(href='#')
+									h3 CORRIDA NOCTURNA PDI
+									.place 
+										i.fa.fa-map-marker
+										span Rapa Nui
+									.date
+										i.fa.fa-calendar-o
+										span junio 2014
+									.more leer mas
+							li
+								a(href='#')
+									h3 CORRIDA NOCTURNA PDI
+									.place 
+										i.fa.fa-map-marker
+										span Rapa Nui
+									.date
+										i.fa.fa-calendar-o
+										span junio 2014
+									.more leer mas
 		include footer
