@@ -1,4 +1,4 @@
-$(document).ready(function(){
+jQuery(document).ready(function($){
 	//main scripts
         //OPEN AND CLOSE HEADER
 	$(".enter_menu svg").click(function(){
@@ -13,8 +13,8 @@ $(document).ready(function(){
             $('.header').animate({
                 height:'120px'
             },1200);                   
-            $('.cont_all').animate({
-                 top:'-120px'
+            $('.slider_head').animate({
+                 marginTop:'-120px'
             },1200);
 
         } else {
@@ -25,8 +25,8 @@ $(document).ready(function(){
                 height:'295px'
             },1200);
 
-            $('.cont_all').animate({
-                top:0
+            $('.slider_head').animate({
+                marginTop:0
             },1200,function(){
                 $('.header nav, .header .tools').animate({
                     marginTop:30,
@@ -53,17 +53,6 @@ $(document).ready(function(){
         var state = $(this).data('ads_box');
         if(state){
 
-            $('.cont_ad_middle').slideUp(function(){
-                $('.open_close_ad .close').hide(function(){
-                    $('.open_close_ad i.fa').removeClass('fa-times');
-                    $('.open_close_ad .open').show(function(){
-                        $('.open_close_ad i.fa').addClass('fa-chevron-down');
-                    });
-                });
-            });
-
-        } else {
-
             $('.cont_ad_middle').slideDown(function(){
                 $('.open_close_ad .open').hide(function(){
                     $('.open_close_ad i.fa').removeClass('fa-chevron-down');
@@ -73,6 +62,17 @@ $(document).ready(function(){
                 });
             });
 
+        } else {
+
+            $('.cont_ad_middle').slideUp(function(){
+                $('.open_close_ad .close').hide(function(){
+                    $('.open_close_ad i.fa').removeClass('fa-times');
+                    $('.open_close_ad .open').show(function(){
+                        $('.open_close_ad i.fa').addClass('fa-chevron-down');
+                    });
+                });
+            });
+            
         }
         $(this).data('ads_box', !state);
     });

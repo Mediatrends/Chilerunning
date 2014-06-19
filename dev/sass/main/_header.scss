@@ -14,8 +14,9 @@
 	}
 	.logo{
 		@include gridle(6,xs);
-		@include gridle(1,sm);
-		@include gridle(2,md);
+		@include gridle(6,sm);
+		@include gridle(1,md);
+		@include gridle(2,lg);
 		@include gridle_parent();
 		svg{
 			margin: 10px 0 0 10px;
@@ -28,8 +29,9 @@
 	}
 	.ad_header{
 		@include gridle_hide(xs);
-		@include gridle(10,sm);
-		@include gridle(8,md);
+		@include gridle_hide(sm);
+		@include gridle(10,md);
+		@include gridle(8,lg);
 		@include gridle_parent(sm);
 		@extend .text-center;
 		padding-top:10px;
@@ -40,8 +42,9 @@
 	}
 	.control_header{
 		@include gridle(6,xs);
-		@include gridle(1,sm);
-		@include gridle(2,md);
+		@include gridle(6,sm);
+		@include gridle(1,md);
+		@include gridle(2,lg);
 		@include gridle_parent(sm);
 		padding-top:10px;
 		height:110px;
@@ -54,6 +57,7 @@
 				margin-right:20px;
 				display: block;
 				max-width: 30px;
+				cursor:pointer;
 				use{
 					fill:$pri_color;
 				}
@@ -163,25 +167,27 @@
 				@extend .inline;
 				@include gridle(8);
 				li{
-					background: {image:url(#{$url-path}icon_rr-ss.gif);repeat:no-repeat;}
-					padding:23px 25px;
+					width: 45px;
 					margin:0 15px;
 					a{
 						display: block;
 						width:100%;
 						height: 100%;
-					}
-					&.red-go{
-						background: {position:0 0;}
-					}
-					&.red-pi{
-						background: {position:-95px 0;}
-					}
-					&.red-tw{
-						background: {position:-189px 0;}
-					}
-					&.red-fb{
-						background: {position:-283px 0;}
+						@extend .text-center;
+						svg{
+							max-height:45px;
+							position: relative;
+							use{
+								fill:$pri_color;
+							}
+						}
+						&:hover{
+							svg{
+								use{
+									fill:$sec_color;
+								}
+							}
+						}
 					}
 				}
 			}

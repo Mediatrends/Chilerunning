@@ -3,7 +3,8 @@ html
 	include header
 	body
 		include svg_graph
-		header.header
+		main.cont_all
+			header.header
 				.logo
 					svg(viewBox='0 0 324.688 324.688')
 						use(xlink:href='#svg_logo')
@@ -38,16 +39,23 @@ html
 					.redes-sociales
 						p Encuentranos:
 						ul
-							li.red-go
-								a
-							li.red-pi
-								a
-							li.red-tw
-								a
-							li.red-fb
-								a
-		main.cont_all
-				section.slider_head
+							li
+								a(href='#')
+									svg(viewBox='3.437 7.681 49.819 44.752')
+										use(xlink:href='#svg_icon_google')
+							li
+								a(href='#')
+									svg(viewBox='8.623 8 7.001 9.043')
+										use(xlink:href='#svg_icon_pinterest')
+							li
+								a(href='#')
+									svg(viewBox='19 22 29 23.999')
+										use(xlink:href='#svg_icon_twitter')
+							li
+								a(href='#')
+									svg(viewBox='25.396 17.68 15.208 32.638')
+										use(xlink:href='#svg_icon_facebook')
+			section.slider_head
 					article.cont_img_slider
 						header
 						main
@@ -75,14 +83,14 @@ html
 										i.fa.fa-circle
 									li
 										i.fa.fa-circle
-				section.ad
+			section.ad
 					.open_close_ad 
 						span.close Cerrar Publicidad
 						span.open.hide Abrir Publicidad
 						i.fa.fa-times
 					.cont_ad_middle
 						.ad-300x250
-				section.cont_post
+			section.cont_post
 					article.box_post
 						a(href='#')
 							main.post
@@ -143,7 +151,7 @@ html
 									i.fa.fa-share-alt
 									span 300
 								.more leer mas
-				section.calendar
+			section.calendar
 					article
 						.calen_destacado
 							h3 MARATON RAPA NUI 2014
@@ -196,4 +204,4 @@ html
 										i.fa.fa-calendar-o
 										span junio 2014
 									.more leer mas
-		include footer
+			include footer
