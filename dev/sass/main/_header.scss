@@ -13,10 +13,8 @@
 		@include animation(1s bg_header_closer normal forwards);
 	}
 	.logo{
+		@include gridle(2);
 		@include gridle(6,xs);
-		@include gridle(6,sm);
-		@include gridle(1,md);
-		@include gridle(2,lg);
 		@include gridle_parent();
 		svg{
 			margin: 10px 0 0 10px;
@@ -29,22 +27,16 @@
 	}
 	.ad_header{
 		@include gridle_hide(xs);
-		@include gridle_hide(sm);
-		@include gridle(10,md);
-		@include gridle(8,lg);
-		@include gridle_parent(sm);
+		@include gridle(8);
 		@extend .text-center;
 		padding-top:10px;
 		.cont_ad{
 			padding-top:5px;
-			@include gridle_hide(xs);
 		}
 	}
 	.control_header{
+		@include gridle(2);
 		@include gridle(6,xs);
-		@include gridle(6,sm);
-		@include gridle(1,md);
-		@include gridle(2,lg);
 		@include gridle_parent(sm);
 		padding-top:10px;
 		height:110px;

@@ -1,8 +1,6 @@
 .slider_head{
-	@include gridle(12);
-	@include gridle_parent();
+	@extend .header_cont;
 	height: 440px;
-	margin-top:-120px;
 	.cont_img_slider{
 		@extend .text-center;
 		height: 260px;
@@ -64,6 +62,7 @@
 }
 .ad{
 	@include gridle_clear(both);
+	@include gridle_hide(sm);
 	width:100%;
 	height: auto;
 	background:{color:$pri_color;image:url(#{$url_path}bg_ads.gif);}
@@ -102,7 +101,9 @@
 	@include gridle(12);
 	@include gridle_parent();
 	.box_post{
-		@include gridle(4);
+		@include gridle(12, xs);
+		@include gridle(6, sm);
+		@include gridle(4, md);
 		@include gridle_parent();
 		height:241px;
 		background:{size:cover;}

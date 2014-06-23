@@ -1,15 +1,31 @@
+
 //MOBILE FIRST
+@include gridle_register_state( xsp, (
+    min-width : $bp-small-2
+) );
+@include gridle_register_state( xssp, (
+    min-width : $bp-small-3
+) );
 @include gridle_register_state( xs, (
-    max-width : 767px
+    min-width : $bp-small
 ) );
 @include gridle_register_state( sm, (
-    max-width : 991px
+    max-width : $bp-med
+) );
+@include gridle_register_state( smp, (
+    max-width : $bp-med-2
 ) );
 @include gridle_register_state( md, (
-    min-width : 992px
+    min-width : $bp-large
+) );
+@include gridle_register_state( mdp, (
+    min-width : $bp-large-2
 ) );
 @include gridle_register_state( lg, (
-    min-width : 1200px
+    min-width : $bp-xl
+) );
+@include gridle_register_state( lgp, (
+    min-width : $bp-xl-2
 ) );
 
 
@@ -71,7 +87,11 @@ body{
 	position: relative;
 	z-index: 9;
 }
-
+.header_cont{
+	@include gridle(12);
+	@include gridle_parent();
+	margin-top:-120px;
+}
 //PALCEHOLDER
 @mixin placeholder {
     &::-webkit-input-placeholder {
