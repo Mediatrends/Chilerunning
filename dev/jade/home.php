@@ -102,7 +102,7 @@
           <h3>CORRIDA NOCTURNA PDI</h3>
           <div class="place"><i class="fa fa-map-marker"></i><span>Rapa Nui</span></div>
           <div class="date"><i class="fa fa-calendar-o"></i><span>junio 2014</span></div>
-          <div class="more">leer mas</div></a></li>
+          <div class="more">leer ma</div></a></li>
     </ul>
   </aside>
 </section>

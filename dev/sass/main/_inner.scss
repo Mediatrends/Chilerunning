@@ -1,3 +1,152 @@
+.inner_slider{
+	.cont_img_slider{
+		.icon_category{
+			@include border-radius(5px);
+			background:{color:$sec_color;}
+			width:48px;
+			height:48px;
+			margin:-10px auto 0;
+		}
+		footer{
+			@include gridle(12);
+			color:#fff;
+			font:{size:15px;family:$font_ubuntu;weight:300;}
+			padding:{top:40px;}
+			text:{transform:uppercase;}
+			.prev_post{
+				display: table;
+				cursor: pointer;
+				@include gridle_float(left);
+				i{
+					font:{size:25px;}
+					display:table-cell;
+					vertical-align: middle;
+				}
+				span{
+					padding:{right:4px;left:4px;}
+					display:table-cell;
+					vertical-align: middle;
+				}
+			}
+			.next_post{
+				@extend .prev_post;
+				@include gridle_float(right);
+			}
+		}
+	}
+}
 .inner_cont{
-	@extend .header_cont;
+	@include gridle_clear(both);
+	@include gridle_parent();
+	@include gridle(12);
+	.post_content{
+		@include gridle(8);
+		@include gridle(12, phoness);
+		@include gridle(12, tabletss);
+		@include gridle(8, desktopess);
+		padding:{top:0;bottom:30px;}
+		.shared{
+			@include gridle(12);
+			@include gridle_parent();
+			padding:{top:20px;bottom:10px;}
+			svg{
+				@include gridle_float(left);
+				height: 20px;
+				padding:{left:10px;right:10px;}
+				use{
+					fill:#fff;
+				}
+			}
+			.btn_facebook{
+				@extend .text-left;
+				background:{color:#3B5998;}
+				@include border-radius(5px);
+				padding:{top:10px;bottom:10px;}
+				@include gridle_float(left);
+				width:211px;
+				font:{size:12px;family:$font_ubuntu;weight:300;}
+				text:{transform:uppercase;}
+				color:#fff;
+				margin:{right:10px;} 
+				span{
+					display: block;
+					padding:{top:3px;} 
+				}
+			}
+			.btn_twitter{
+				@extend .btn_facebook;
+				background:{color:#1DCAFF;}
+			}
+			.btn_more{
+				@include gridle_float(left);
+				@include border-radius(5px);
+				background:{color:$pri_color;}
+				color:#fff;
+				padding:12px;
+				display: table;
+				i{
+					display: table-cell;
+					vertical-align: middle;
+				}
+			}
+			.count_share{
+				@include gridle_float(left);
+				@extend .text-center;
+				padding:{left:10px;}
+				p{
+					font:{family:$font_ubuntu;size:8px;weight:300;}
+					@extend .text-center;
+					color:$text_color;
+					text:{transform:uppercase;}
+					@extend .paddings;
+					@extend .margins;
+					line-height: 24px;
+					&.count{
+						color:$sec_color;
+						font:{size:34px;weight:700;}
+					}
+				}
+			}
+			.back{
+				@extend .btn_more;
+				@include gridle_float(right);
+			}
+		}
+		p{
+			color:$text_color;
+			font:{family:$font_ubuntu;size:16px;weight:300;}
+			text:{align:justify;}
+			line:{height:21px;}
+		}
+		.tags{
+			padding:5px;
+			@include border-radius(5px);
+			background:{color:$pri_color;}
+			color:#fff;
+			font:{family:$font_ubuntu;size:15px;weight:300;style:italic;}
+			@include gridle_float(left);
+			display: table;
+			i{
+				display: table-cell;
+				vertical-align: middle;
+				padding:{left:5px;right:10px;}
+			}
+			span{
+				@extend i;
+				text:{decoration:underline;}
+			}
+		}
+		.date{
+			padding:{top:5px;bottom:3px;left:5px;right:5px;}
+			@include border-radius(5px);
+			background:{color:$pri_color;}
+			color:#fff;
+			font:{family:$font_ubuntu;size:15px;weight:300;style:italic;}
+			@include gridle_float(right);
+			display: table;
+		}
+	}
+	aside{
+		@include gridle(4);
+	}
 }
