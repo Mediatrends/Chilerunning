@@ -4,7 +4,9 @@
 	color:#fff;
 	padding: 20px 0;
 	.logo{
-		@include gridle(1);
+		@include gridle_hide(phoness);
+		@include gridle(3, tabletss);
+		@include gridle(1, landscapess);
 		svg{
 			max-width: 80%;
 			max-height:110px;
@@ -14,7 +16,9 @@
 		}
 	}
 	.about{
-		@include gridle(6);
+		@include gridle(12, phoness);
+		@include gridle(9, tabletss);
+		@include gridle(6, landscapess);
 		h4{
 			font:{size:18px;family:$font_ubuntu;weight:300;}
 			color:#fff;
@@ -26,13 +30,24 @@
 			color:#fff;
 			text:{align:justify;}
 			padding-left:10px;
+			@include gridle_state(phoness){
+				padding: 0;
+			}
+			@include gridle_state(tabletss){
+				padding: 0;
+			}
 		}
 		.redes{
 			@extend .inline;
 			@include gridle(8);
+			@include gridle_hide(tabletss);
+			@include gridle_show(landscapess);
 			li{
 				width: 25px;
 				margin:0 10px;
+				@include gridle_state(phoness){
+					margin: 20px 10px;
+				}
 				a{
 					display: block;
 					width:100%;
@@ -58,7 +73,13 @@
 	}
 	.category{
 		@extend .about;
-		@include gridle(3);
+		@include gridle_hide(phoness);
+		@include gridle(6,tabletss);
+		@include gridle_clear(left, tabletss);
+		@include gridle_state(landscapess){
+			clear: none;
+		}
+		@include gridle(3, landscapess);
 		.cat{
 			list:{style:none;}
 			@extend .margins;
@@ -80,7 +101,9 @@
 	}
 	.contact{
 		@extend .about;
-		@include gridle(2);
+		@include gridle(12, phoness);
+		@include gridle(6, tabletss);
+		@include gridle(2, landscapess);
 		.btn{
 			background: {color:#fff;}
 			@include border-radius(5px);

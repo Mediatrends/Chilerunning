@@ -1,31 +1,16 @@
 
 //MOBILE FIRST
-@include gridle_register_state( xsp, (
-    min-width : $bp-small-2
+@include gridle_register_state( phoness, (
+    max-width : $bp-small
 ) );
-@include gridle_register_state( xssp, (
-    min-width : $bp-small-3
+@include gridle_register_state( tabletss, (
+    min-width : $bp-med
 ) );
-@include gridle_register_state( xs, (
-    min-width : $bp-small
-) );
-@include gridle_register_state( sm, (
-    max-width : $bp-med
-) );
-@include gridle_register_state( smp, (
-    max-width : $bp-med-2
-) );
-@include gridle_register_state( md, (
+@include gridle_register_state( landscapess, (
     min-width : $bp-large
 ) );
-@include gridle_register_state( mdp, (
-    min-width : $bp-large-2
-) );
-@include gridle_register_state( lg, (
+@include gridle_register_state( desktopess, (
     min-width : $bp-xl
-) );
-@include gridle_register_state( lgp, (
-    min-width : $bp-xl-2
 ) );
 
 

@@ -11,7 +11,7 @@
         <li>
           <p><i class="fa fa-eye"></i><span>13000</span></p>
         </li>
-        <li>
+        <li class="shared_hide">
           <p><i class="fa fa-share-alt"></i><span>300</span></p>
         </li>
       </ul>

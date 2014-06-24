@@ -1,12 +1,20 @@
 .slider_head{
 	@extend .header_cont;
 	height: 440px;
+	@include gridle_state(phoness){
+		height:640px;
+	}
 	.cont_img_slider{
 		@extend .text-center;
 		height: 260px;
 		width:100%;
 		padding-top:180px; 
 		background: {size:cover;image:url(#{$url_path}exam_sliderimg.jpg);}
+		@include gridle_state(phoness){
+			height:410px;
+			padding-top:230px;
+			background: {position:center;}
+		}
 		h2{
 			font:{family:$font_ubuntu;weight:300;size:30px}
 			color:#fff;
@@ -17,6 +25,11 @@
 			font:{family:$font_ubuntu;weight:700;}
 			color:$pri_color;
 			@extend .inline;
+			@include gridle_state(phoness){
+				.shared_hide{
+					display: none;
+				}
+			}
 		}
 		main{
 			li{
@@ -62,7 +75,7 @@
 }
 .ad{
 	@include gridle_clear(both);
-	@include gridle_hide(sm);
+	@include gridle_hide(phoness);
 	width:100%;
 	height: auto;
 	background:{color:$pri_color;image:url(#{$url_path}bg_ads.gif);}
@@ -101,9 +114,10 @@
 	@include gridle(12);
 	@include gridle_parent();
 	.box_post{
-		@include gridle(12, xs);
-		@include gridle(6, sm);
-		@include gridle(4, md);
+		@include gridle(4);
+		@include gridle(12, phoness);
+		@include gridle(12, tabletss);
+		@include gridle(4, landscapess);
 		@include gridle_parent();
 		height:241px;
 		background:{size:cover;}
@@ -113,6 +127,8 @@
 			height: 100%;
 			.post{
 				@include gridle(5);
+				@include gridle(6, phoness);
+				@include gridle(6, tabletss);
 				background:{color:#fff;}
 				padding-bottom: 10px;
 				h3{
@@ -159,13 +175,36 @@
 	@extend .cont_post;
 	article{
 		@include gridle(7);
+		@include gridle(12, phoness);
+		@include gridle(12, tabletss);
+		@include gridle(7, landscapess);
 		@include gridle_parent();
 		background:{image:url(#{$url_path}exam_bg_calendar.jpg);size:cover;}
 		height:385px;
+		@include gridle_state(phoness){
+			height:280px;
+			background: {position:center;}
+		}
 		.calen_destacado{
 			@include gridle(6);
+			@include gridle(12, phoness);
 			background:{color:#fff;}
 			height: 125px;
+			@include gridle_state(phoness){
+				background: {color:$pri_color;}
+				h3{
+					color:#fff !important;
+				}
+				i{
+					color:#fff !important;
+				}
+				span{
+					color:#fff !important;
+				}
+				.more{
+					color:#fff !important;
+				}
+			}
 			h3{
 				font:{size:20px;family:$font_ubuntu;weight:700;}
 				color:$pri_color;
@@ -212,6 +251,9 @@
 	}
 	aside{
 		@include gridle(5);
+		@include gridle_hide(phoness);
+		@include gridle_hide(tabletss);
+		@include gridle_show(landscapess);
 		@include gridle_parent();
 		height:385px;
 		overflow: auto;
