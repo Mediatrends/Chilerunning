@@ -72,6 +72,9 @@ module.exports = function(grunt) {
 		        files: ['dev/**/*.jade'],
 		        tasks: ['jade']
 		    },
+		    html2:{
+		    	files:['app/**/*.php']
+		    },
 		    js: {
 	        	files: [
 	          		'<%= jshint.all %>'

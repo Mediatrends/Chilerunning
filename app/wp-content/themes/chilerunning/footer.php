@@ -1,3 +1,40 @@
+			<!--CALENDAR-->
+
+			<section class="calendar">
+			  <article>
+			    <div class="calen_destacado">
+			      <h3>MARATON RAPA NUI 2014</h3>
+			      <div class="date"><i class="fa fa-calendar-o"></i><span>junio 2014</span></div>
+			      <div class="place"><i class="fa fa-map-marker"></i><span>Rapa Nui</span></div>
+			      <div class="more">leer mas</div>
+			    </div>
+			  </article>
+			  <aside>
+			    <ul>
+			      <li><a href="#">
+			          <h3>CORRIDA NOCTURNA PDI</h3>
+			          <div class="place"><i class="fa fa-map-marker"></i><span>Rapa Nui</span></div>
+			          <div class="date"><i class="fa fa-calendar-o"></i><span>junio 2014</span></div>
+			          <div class="more">leer mas</div></a></li>
+			      <li><a href="#">
+			          <h3>CORRIDA NOCTURNA PDI</h3>
+			          <div class="place"><i class="fa fa-map-marker"></i><span>Rapa Nui</span></div>
+			          <div class="date"><i class="fa fa-calendar-o"></i><span>junio 2014</span></div>
+			          <div class="more">leer mas</div></a></li>
+			      <li><a href="#">
+			          <h3>CORRIDA NOCTURNA PDI</h3>
+			          <div class="place"><i class="fa fa-map-marker"></i><span>Rapa Nui</span></div>
+			          <div class="date"><i class="fa fa-calendar-o"></i><span>junio 2014</span></div>
+			          <div class="more">leer mas</div></a></li>
+			      <li><a href="#">
+			          <h3>CORRIDA NOCTURNA PDI</h3>
+			          <div class="place"><i class="fa fa-map-marker"></i><span>Rapa Nui</span></div>
+			          <div class="date"><i class="fa fa-calendar-o"></i><span>junio 2014</span></div>
+			          <div class="more">leer ma</div></a></li>
+			    </ul>
+			  </aside>
+			</section>
+
 			<!-- footer -->
 
 			<footer id="footer" role="contentinfo">

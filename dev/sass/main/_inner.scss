@@ -1,5 +1,7 @@
 .inner_slider{
 	.cont_img_slider{
+		overflow: hidden;
+		position:relative;
 		.icon_category{
 			@include border-radius(5px);
 			background:{color:$sec_color;}
@@ -11,21 +13,30 @@
 			@include gridle(12);
 			color:#fff;
 			font:{size:15px;family:$font_ubuntu;weight:300;}
-			padding:{top:40px;}
+			//padding:{top:40px;}
 			text:{transform:uppercase;}
+			position: absolute;
+			bottom:20px;
+			left:0;
+			right:0;
+			margin: 0 auto;
 			.prev_post{
 				display: table;
 				cursor: pointer;
 				@include gridle_float(left);
-				i{
-					font:{size:25px;}
-					display:table-cell;
-					vertical-align: middle;
-				}
-				span{
-					padding:{right:4px;left:4px;}
-					display:table-cell;
-					vertical-align: middle;
+				a{
+					color:#fff;
+					text:{decoration:none;}
+					i{
+						font:{size:25px;}
+						display:table-cell;
+						vertical-align: middle;
+					}
+					span{
+						padding:{right:4px;left:4px;}
+						display:table-cell;
+						vertical-align: middle;
+					}
 				}
 			}
 			.next_post{
@@ -117,6 +128,9 @@
 			font:{family:$font_ubuntu;size:16px;weight:300;}
 			text:{align:justify;}
 			line:{height:21px;}
+			img{
+				@extend .responsive-img;
+			}
 		}
 		.tags{
 			padding:5px;
@@ -131,8 +145,9 @@
 				vertical-align: middle;
 				padding:{left:5px;right:10px;}
 			}
-			span{
+			a{
 				@extend i;
+				color:#fff;
 				text:{decoration:underline;}
 			}
 		}
@@ -142,11 +157,33 @@
 			background:{color:$pri_color;}
 			color:#fff;
 			font:{family:$font_ubuntu;size:15px;weight:300;style:italic;}
+			text:{transform:capitalize;}
 			@include gridle_float(right);
 			display: table;
 		}
 	}
 	aside{
 		@include gridle(4);
+		.weather{
+			@include gridle(12);
+			#wpc-weather{
+				&.wpc-26{
+					font:{family:$font_ubuntu;}
+					color:$pri_color;
+					.now{
+						@include gridle(3);
+					}
+					.short_condition{
+						@include gridle(3);
+					}
+					.today{
+						@include gridle(6);
+						.day{
+							@extend .hide;
+						}
+					}
+				}
+			}
+		}
 	}
 }

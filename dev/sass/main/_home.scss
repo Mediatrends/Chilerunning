@@ -20,11 +20,16 @@
 			color:#fff;
 			max-width: 628px;
 			margin:0 auto;
+			text:{transform:uppercase;}
 		}
 		ul{
 			font:{family:$font_ubuntu;weight:700;}
 			color:$pri_color;
 			@extend .inline;
+			a{
+				color:$pri_color;
+				text:{decoration:none;}
+			}
 			@include gridle_state(phoness){
 				.shared_hide{
 					display: none;
@@ -134,6 +139,7 @@
 				h3{
 					font:{family:$font_ubuntu;weight:700;size:12px;}
 					color:$pri_color;
+					text:{transform:uppercase;}
 				}
 				.data{
 					i{
