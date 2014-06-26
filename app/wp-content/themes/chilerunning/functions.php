@@ -449,4 +449,18 @@ function html5_shortcode_demo_2($atts, $content = null) // Demo Heading H2 short
     return '<h2>' . $content . '</h2>';
 }
 
+// post views
+function setAndViewPostViews($postID) {
+    $count_key = 'views';
+    $count = get_post_meta($postID, $count_key, true);
+    if($count==''){
+        $count = 0;
+        delete_post_meta($postID, $count_key);
+        add_post_meta($postID, $count_key, '0');
+    }else{
+        $count++;
+        update_post_meta($postID, $count_key, $count);
+    }
+    return $count; /* so you can show it */
+}
 ?>

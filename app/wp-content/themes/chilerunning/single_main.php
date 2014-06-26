@@ -9,7 +9,7 @@
 		
 		<?php $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>
 
-		<article class="cont_img_slider" style="background-image:url(<?php echo $url; ?>);">
+		<article class="cont_img_slider_inner" style="background-image:url(<?php echo $url; ?>);">
 			<header></header>
 			<main>
 			  <div class="icon_category"></div>
@@ -19,7 +19,7 @@
 			      <p><i class="fa fa-pencil"></i><span><?php the_author_posts_link(); ?></span></p>
 			    </li>
 			    <li>
-			      <p><i class="fa fa-eye"></i><span>13000</span></p>
+			      <p><i class="fa fa-eye"></i><span>000</span></p>
 			    </li>
 			    <li class="shared_hide">
 			      <p><i class="fa fa-share-alt"></i><span>300</span></p>

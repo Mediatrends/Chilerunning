@@ -76,4 +76,11 @@ jQuery(document).ready(function($){
         }
         $(this).data('ads_box', !state);
     });
+
+    $('#slider_top').bjqs({
+        'height' : 440,
+        'width' : '100%',
+        'responsive' : true,
+        'showcontrols' : false,
+    });
 });

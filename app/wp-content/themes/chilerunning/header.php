@@ -14,6 +14,7 @@
 
 		<?php wp_head(); ?>
 		
+		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/bjqs.css"/>
 		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"/>
 		<script>
         // conditionizr.com
@@ -42,7 +43,7 @@
 			        </a>
 		        </div>
 		        <div class="ad_header">
-		          <div style="width:728px;height:90px;margin:0 auto;background-color:#BFDFFF;" class="cont_ad"></div>
+		          <div style="width:728px;height:90px;margin:0 auto;background-color:#BFDFFF;" class="cont_ad" id="header_top"></div>
 		        </div>
 		        <div class="control_header">
 		          <div class="enter_menu">

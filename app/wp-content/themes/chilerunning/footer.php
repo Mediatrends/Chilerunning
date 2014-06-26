@@ -88,6 +88,8 @@
 
 		<?php wp_footer(); ?>
 
+		<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/bjqs-1.3.min.js"></script>
+
 		<!-- analytics -->
 		<script>
 		(function(f,i,r,e,s,h,l){i['GoogleAnalyticsObject']=s;f[s]=f[s]||function(){

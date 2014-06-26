@@ -1,5 +1,48 @@
 .inner_slider{
-	.cont_img_slider{
+	.cont_img_slider_inner{
+		@extend .text-center;
+		height: 260px;
+		width:100%;
+		padding:{top:180px;left:0;right:0;bottom:0;} 
+		background: {size:cover;image:url(#{$url_path}exam_sliderimg.jpg);}
+		list:{style:none;}
+		@extend .margins;
+		@include gridle_state(phoness){
+			height:410px !important;
+			padding-top:230px;
+			background: {position:center;}
+		}
+		h2{
+			font:{family:$font_ubuntu;weight:300;size:30px}
+			color:#fff;
+			max-width: 628px;
+			margin:0 auto;
+			text:{transform:uppercase;}
+		}
+		ul{
+			font:{family:$font_ubuntu;weight:700;}
+			color:$pri_color;
+			@extend .inline;
+			a{
+				color:$pri_color;
+				text:{decoration:none;}
+			}
+			@include gridle_state(phoness){
+				.shared_hide{
+					display: none;
+				}
+			}
+		}
+		main{
+			li{
+				padding:0 10px;
+				font:{size:20px;}
+				i{
+					color:#fff;
+					margin-right:5px; 
+				}
+			}
+		}
 		overflow: hidden;
 		position:relative;
 		.icon_category{
@@ -9,40 +52,40 @@
 			height:48px;
 			margin:-10px auto 0;
 		}
-		footer{
-			@include gridle(12);
-			color:#fff;
-			font:{size:15px;family:$font_ubuntu;weight:300;}
-			//padding:{top:40px;}
-			text:{transform:uppercase;}
-			position: absolute;
-			bottom:20px;
-			left:0;
-			right:0;
-			margin: 0 auto;
-			.prev_post{
-				display: table;
-				cursor: pointer;
-				@include gridle_float(left);
-				a{
-					color:#fff;
-					text:{decoration:none;}
-					i{
-						font:{size:25px;}
-						display:table-cell;
-						vertical-align: middle;
-					}
-					span{
-						padding:{right:4px;left:4px;}
-						display:table-cell;
-						vertical-align: middle;
-					}
+	}
+	footer{
+		@include gridle(12);
+		color:#fff;
+		font:{size:15px;family:$font_ubuntu;weight:300;}
+		//padding:{top:40px;}
+		text:{transform:uppercase;}
+		position: absolute;
+		bottom:20px;
+		left:0;
+		right:0;
+		margin: 0 auto;
+		.prev_post{
+			display: table;
+			cursor: pointer;
+			@include gridle_float(left);
+			a{
+				color:#fff;
+				text:{decoration:none;}
+				i{
+					font:{size:25px;}
+					display:table-cell;
+					vertical-align: middle;
+				}
+				span{
+					padding:{right:4px;left:4px;}
+					display:table-cell;
+					vertical-align: middle;
 				}
 			}
-			.next_post{
-				@extend .prev_post;
-				@include gridle_float(right);
-			}
+		}
+		.next_post{
+			@extend .prev_post;
+			@include gridle_float(right);
 		}
 	}
 }
@@ -67,6 +110,9 @@
 				use{
 					fill:#fff;
 				}
+				@include gridle_state(phoness){
+					float: none;
+				}
 			}
 			.btn_facebook{
 				@extend .text-left;
@@ -81,7 +127,15 @@
 				margin:{right:10px;} 
 				span{
 					display: block;
-					padding:{top:3px;} 
+					padding:{top:3px;}
+				}
+				@include gridle_state(phoness){
+					text-align: center;
+					padding-bottom:7px;
+					width: 40px;
+					span{
+						display: none;
+					}
 				}
 			}
 			.btn_twitter{
