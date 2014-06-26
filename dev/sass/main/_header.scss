@@ -24,6 +24,9 @@
 				fill:$pri_color;
 			}
 		}
+		@include gridle_state(phoness){
+			max-height: 100px;
+		}
 	}
 	.ad_header{
 		@include gridle(8);

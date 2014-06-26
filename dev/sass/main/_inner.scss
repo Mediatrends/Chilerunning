@@ -106,7 +106,9 @@
 			svg{
 				@include gridle_float(left);
 				height: 20px;
-				padding:{left:10px;right:10px;}
+				width: 20px;
+				padding:{right:10px;}
+				margin:{left:10px;}
 				use{
 					fill:#fff;
 				}

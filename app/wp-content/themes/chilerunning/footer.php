@@ -1,36 +1,48 @@
 			<!--CALENDAR-->
 
 			<section class="calendar">
-			  <article>
-			    <div class="calen_destacado">
-			      <h3>MARATON RAPA NUI 2014</h3>
-			      <div class="date"><i class="fa fa-calendar-o"></i><span>junio 2014</span></div>
-			      <div class="place"><i class="fa fa-map-marker"></i><span>Rapa Nui</span></div>
-			      <div class="more">leer mas</div>
-			    </div>
-			  </article>
+				<?php $query = new WP_Query('showposts=1&category_name=-destacado_calendar'); ?>
+					<?php if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
+					
+					<?php $feat_image = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>
+					 <article class="calendar_destacado" style="background-image:url(<?php echo $feat_image;?>);">
+					    <a href="http://<?php the_field('sitio_web_del_evento'); ?>" rel="calendario" title="<?php the_field('sitio_web_del_evento'); ?>" target="_blank">
+						    <div class="calen_destacado">
+						      <h3><?php the_title(); ?></h3>
+						      <div class="date"><i class="fa fa-calendar-o"></i><span><?php the_field('fecha_del_evento'); ?></span></div>
+						      <div class="place"><i class="fa fa-map-marker"></i><span><?php the_field('locacion_del_evento'); ?></span></div>
+						      <div class="more">leer mas</div>
+						    </div>
+						</a>
+					  </article>
+
+					<?php endwhile; 
+					wp_reset_postdata();
+					else: ?>
+					<p>Sorry, no posts matched your criteria.</p>
+				<?php endif; ?>
+			 
 			  <aside>
 			    <ul>
-			      <li><a href="#">
-			          <h3>CORRIDA NOCTURNA PDI</h3>
-			          <div class="place"><i class="fa fa-map-marker"></i><span>Rapa Nui</span></div>
-			          <div class="date"><i class="fa fa-calendar-o"></i><span>junio 2014</span></div>
-			          <div class="more">leer mas</div></a></li>
-			      <li><a href="#">
-			          <h3>CORRIDA NOCTURNA PDI</h3>
-			          <div class="place"><i class="fa fa-map-marker"></i><span>Rapa Nui</span></div>
-			          <div class="date"><i class="fa fa-calendar-o"></i><span>junio 2014</span></div>
-			          <div class="more">leer mas</div></a></li>
-			      <li><a href="#">
-			          <h3>CORRIDA NOCTURNA PDI</h3>
-			          <div class="place"><i class="fa fa-map-marker"></i><span>Rapa Nui</span></div>
-			          <div class="date"><i class="fa fa-calendar-o"></i><span>junio 2014</span></div>
-			          <div class="more">leer mas</div></a></li>
-			      <li><a href="#">
-			          <h3>CORRIDA NOCTURNA PDI</h3>
-			          <div class="place"><i class="fa fa-map-marker"></i><span>Rapa Nui</span></div>
-			          <div class="date"><i class="fa fa-calendar-o"></i><span>junio 2014</span></div>
-			          <div class="more">leer ma</div></a></li>
+		    	<?php $query = new WP_Query('category_name=-calendario-lista'); ?>
+					<?php if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
+					
+					<?php $feat_image = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>
+					
+						<li>
+							<a href="http://<?php the_field('sitio_web_del_evento'); ?>" rel="calendario" title="<?php the_field('sitio_web_del_evento'); ?>" target="_blank">
+								<h3><?php the_title(); ?></h3>
+								<div class="place"><i class="fa fa-map-marker"></i><span><?php the_field('locacion_del_evento'); ?></span></div>
+								<div class="date"><i class="fa fa-calendar-o"></i><span><?php the_field('fecha_del_evento'); ?></span></div>
+								<div class="more">leer mas</div>
+							</a>
+						</li>
+
+					<?php endwhile; 
+					wp_reset_postdata();
+					else: ?>
+					<p>Sorry, no posts matched your criteria.</p>
+				<?php endif; ?>
 			    </ul>
 			  </aside>
 			</section>

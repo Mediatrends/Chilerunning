@@ -201,7 +201,7 @@
 }
 .calendar{
 	@extend .cont_post;
-	article{
+	.calendar_destacado{
 		@include gridle(7);
 		@include gridle(12, phoness);
 		@include gridle(12, tabletss);
@@ -257,13 +257,14 @@
 				@include gridle_parent();
 				@include gridle_clear(right);
 				padding-top: 25px;
+				@extend .text-right;
 				i{
-					font:{size:28px;}
+					font:{size:21px;}
 					color:$pri_color;
 					margin-right:5px;
 				}
 				span{
-					font:{size:20px;family:$font_ubuntu;weight:300;style:italic;}
+					font:{size:0.9rem;family:$font_ubuntu;weight:300;style:italic;}
 					text:{transform:uppercase}
 					color: $pri_color;
 				}
