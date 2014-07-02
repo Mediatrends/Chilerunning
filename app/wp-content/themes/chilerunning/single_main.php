@@ -45,10 +45,21 @@
 	</section>
 
 	<section id="post-<?php the_ID(); ?>" <?php post_class('inner_cont'); ?>>
+		
+		
+
+<script type="text/javascript">
+			jQuery(document).ready(function($){
+				addthis.counter("#atcounter");
+			});
+</script>
 
 		<article class="post_content">
 			<div class="shared">
-			  <div class="btn_facebook">
+
+				<?php do_action( 'addthis_widget', get_permalink(), get_the_title(), 'above'); ?>
+
+			  <!--div class="btn_facebook">
 			    <svg viewBox="25.396 17.68 15.208 32.638">
 			      <use xlink:href="#svg_icon_facebook"></use>
 			    </svg><span>compartir con facebook</span>
@@ -58,9 +69,10 @@
 			      <use xlink:href="#svg_icon_twitter"></use>
 			    </svg><span>compartir con twitter</span>
 			  </div>
-			  <div class="btn_more"><i class="fa fa-plus"></i></div>
+			  <div class="btn_more"><i class="fa fa-plus"></i></div-->
+			  	
 			  <div class="count_share">
-			    <p class="count">3</p>
+			    <p class="count"><a id="atcounter"></a></p>
 			    <p>compartidos</p>
 			  </div>
 			  <div class="back"><i class="fa fa-chevron-left"></i></div>

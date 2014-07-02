@@ -99,10 +99,40 @@
 		@include gridle(12, tabletss);
 		@include gridle(8, desktopess);
 		padding:{top:0;bottom:30px;}
+		.addthis_toolbox{
+			@extend .hide;
+		}
 		.shared{
 			@include gridle(12);
 			@include gridle_parent();
 			padding:{top:20px;bottom:10px;}
+			.addthis_toolbox{
+				display: block !important;
+				width:442px;
+				@include gridle_float(left);
+				a{
+					&.addthis_button_facebook{
+						@extend .text-left;
+						background:{color:#3B5998;}
+						@include border-radius(5px);
+						padding:{top:10px;bottom:10px;}
+						@include gridle_float(left);
+						width:211px;
+						font:{size:12px;family:$font_ubuntu;weight:300;}
+						text:{transform:uppercase;decoration:none;}
+						color:#fff;
+						margin:{right:10px;}
+						span{
+							display: block;
+							padding:{top:3px;}
+						}
+					}
+					&.addthis_button_twitter{
+						@extend .addthis_button_facebook;
+						background:{color:#1DCAFF;}
+					}
+				}
+			}
 			svg{
 				@include gridle_float(left);
 				height: 20px;
@@ -167,10 +197,19 @@
 					text:{transform:uppercase;}
 					@extend .paddings;
 					@extend .margins;
-					line-height: 24px;
+					line-height:0 !important;
 					&.count{
-						color:$sec_color;
-						font:{size:34px;weight:700;}
+						a{
+							&.addthis_button_expanded{
+								color:$sec_color;
+								font:{size:34px;weight:700;}
+								background:{image:none;};
+								@extend .margins;
+							}
+							&.addthis_button_compact{
+								@extend .hide;
+							}
+						}
 					}
 				}
 			}
