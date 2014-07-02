@@ -166,34 +166,39 @@
 			@include gridle_parent();
 			@extend .text-right;
 			padding-right:30px !important;
-			input[type='text']{
-				border: 0;
-				background: {color:#ccc;}
-				height:40px;
-				width: 90%;
-				display: inline-block;
-				margin: 0 10px 10px 0;
-				padding-left:10px;
-				@include gridle_float(right);
-				color:#fff;
-				@include placeholder{
+			form{
+				width:100%;
+				input[type="search"]{
+					border: 0;
+					background: {color:#ccc;}
+					height:40px;
+					width: 90% !important;
+					display: inline-block;
+					margin: 0 10px 10px 0;
+					padding-left:10px;
+					@include gridle_float(right);
 					color:#fff;
-					opacity: 1;
-					font: {family:$font_ubuntu;weight:300;size:18px;style:italic;}
+					@include placeholder{
+						color:#fff;
+						opacity: 1;
+						font: {family:$font_ubuntu;weight:300;size:18px;style:italic;}
+					}
 				}
-			}
-			button[type='submite']{
-				background: {image:url(#{$url_path}icon_lupa.gif);repeat:no-repeat;color:transparent;}
-				height: 29px;
-				width:28px;
-				border:0;
-				display: inline-block;
-				margin-top:5px;
-				@include gridle_float(right);
-			}
-			@include gridle_state(tabletss){
-				input{
-					width:80% !important;
+				button[type="submit"]{
+					background: {image:url(#{$url_path}icon_lupa.gif);repeat:no-repeat;color:transparent;}
+					height: 29px;
+					width:28px;
+					border:0;
+					display: inline-block;
+					margin-top:5px;
+					text:{indent:-1000px;}
+					overflow: hidden;
+					@include gridle_float(right);
+				}
+				@include gridle_state(tabletss){
+					input{
+						width:80% !important;
+					}
 				}
 			}
 		}

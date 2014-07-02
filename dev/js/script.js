@@ -6,7 +6,7 @@ jQuery(document).ready(function($){
         if(state){
 
             $('.header').removeClass('bg_header').addClass('bg_header_closer');
-            $('.header nav, .header .tools').animate({
+            $('#tools_open, #menu_open').animate({
             		marginTop:0,
             		opacity:0
             },500);
@@ -27,12 +27,12 @@ jQuery(document).ready(function($){
 
             $('.slider_head').animate({
                 marginTop:0
-            },1200,function(){
-                $('.header nav, .header .tools').animate({
-                    marginTop:30,
-                    opacity:1
-                },500);
-            });
+            },1200);
+
+             $('#tools_open, #menu_open').animate({
+                marginTop:30,
+                opacity:1
+            },500);
 
         }
         $(this).data('toggleState', !state);
@@ -77,10 +77,4 @@ jQuery(document).ready(function($){
         $(this).data('ads_box', !state);
     });
 
-    $('#slider_top').bjqs({
-        'height' : 440,
-        'width' : '100%',
-        'responsive' : true,
-        'showcontrols' : false,
-    });
 });

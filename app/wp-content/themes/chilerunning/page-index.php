@@ -1,5 +1,20 @@
 <?php /* Template Name: Index */ ?>
 <?php get_header(); ?>
+
+<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/bjqs-1.3.min.js"></script>
+<script type="text/javascript">
+	
+	jQuery(document).ready(function($){
+		$('#slider_top').bjqs({
+	        'height' : 440,
+	        'width' : '100%',
+	        'responsive' : true,
+	        'showcontrols' : false,
+	    });
+	});
+
+</script>
+
 <section class="slider_head">
 		
 	<div id="slider_top">

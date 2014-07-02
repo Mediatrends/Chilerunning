@@ -99,8 +99,6 @@
 		<!-- /wrapper -->
 
 		<?php wp_footer(); ?>
-		
-		<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/bjqs-1.3.min.js"></script>
 
 		<!-- analytics -->
 		<script>

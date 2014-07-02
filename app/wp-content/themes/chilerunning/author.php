@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<div class="cont_img_slider bjqs"></div>
+
 	<!-- section -->
 	<section class="cont_post cont_author">
 		
@@ -12,7 +12,7 @@
 
 			<p class="nombre"><?php echo get_the_author(); ?></p>
 			<p><?php if ( get_the_author_meta('description')) : ?></p>
-<br>
+		<br>
 			<h2><?php _e( 'Algo sobre el autor:', 'html5blank' ); ?></h2>
 			<p><?php echo wpautop( get_the_author_meta('description') ); ?></p>
 

@@ -45,6 +45,7 @@
 		        <div class="ad_header">
 		          <div style="width:728px;height:90px;margin:0 auto;background-color:#BFDFFF;" class="cont_ad" id="header_top"></div>
 		        </div>
+
 		        <div class="control_header">
 		          <div class="enter_menu">
 		            <svg viewBox="0 0 80 70">
@@ -52,13 +53,14 @@
 		            </svg>
 		          </div>
 		        </div>
-		        <nav class="nav" role="navigation">
+
+		        <nav id="menu_open" class="nav" role="navigation">
 					<?php html5blank_nav(); ?>
 				</nav>
-		        <div class="tools">
+
+		        <div id="tools_open" class="tools">
 		          <div class="search">
-		            <button type="submite"></button>
-		            <input type="text" placeholder="Buscar">
+		          	<?php get_template_part('searchform'); ?>
 		          </div>
 		          <div class="redes-sociales">
 		            <p>Encuentranos:</p>
@@ -82,5 +84,6 @@
 		            </ul>
 		          </div>
 		        </div>
+
 		      </header>
 			<!-- /header -->
