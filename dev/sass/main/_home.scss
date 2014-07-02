@@ -198,6 +198,35 @@
 			}
 		}
 	}
+	&.cont_author{
+		margin-top:-120px;
+		background: {color:$pri_color;}
+		.cont_author{
+			@extend .text-center;
+			padding: 140px 0px 30px;
+			background:{color:$sec_color;}
+			font:{family:$font_ubuntu;size:25px;weight:700;}
+			color:#fff;
+			h2{
+				display:inline-block;
+				@extend .margins;
+			}
+			.img_author{
+				img{
+					@include border-radius(50%);
+				}
+			}
+			p{
+				&.nombre{
+					font:{size:20px;}
+				}
+				display:inline-block;
+				font:{weight:300;size:14px;}
+				text:{transform:capitalize;}
+				padding:{left:10px;}
+			}
+		}
+	}
 }
 .calendar{
 	@extend .cont_post;
@@ -306,6 +335,7 @@
 						@extend .paddings;
 						font:{size:20px;family:$font_ubuntu;weight:700;}
 						color:$pri_color;
+						text:{transform:uppercase;}
 					}
 					.place{
 						margin:5px 0;

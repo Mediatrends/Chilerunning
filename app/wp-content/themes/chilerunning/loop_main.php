@@ -17,7 +17,7 @@
 		</a>
 	</article>
 
-	<?php endwhile; 
+	<?php endwhile;
 	wp_reset_postdata();
 	else: ?>
 	<p>Sorry, no posts matched your criteria.</p>

@@ -1,7 +1,7 @@
 			<!--CALENDAR-->
 
 			<section class="calendar">
-				<?php $query = new WP_Query('showposts=1&category_name=-destacado_calendar'); ?>
+				<?php $query = new WP_Query('showposts=1&category_name=destacado_calendar'); ?>
 					<?php if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
 					
 					<?php $feat_image = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>
@@ -24,7 +24,7 @@
 			 
 			  <aside>
 			    <ul>
-		    	<?php $query = new WP_Query('category_name=-calendario-lista'); ?>
+		    	<?php $query = new WP_Query('category_name=calendario-lista'); ?>
 					<?php if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
 					
 					<?php $feat_image = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>
@@ -99,7 +99,7 @@
 		<!-- /wrapper -->
 
 		<?php wp_footer(); ?>
-
+		
 		<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/bjqs-1.3.min.js"></script>
 
 		<!-- analytics -->

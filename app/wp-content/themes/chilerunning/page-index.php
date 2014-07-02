@@ -8,63 +8,6 @@
 		
 			<?php get_template_part('loop_slider'); ?>
 
-			<!--li>
-				<main>
-				
-					<h2>5 COSAS QUE LOS CORREDORES DEBEMOS SABER ACERCA DE LAS RODILLAS</h2>
-					<ul>
-					 	<li>
-					 		<p>
-					 			<i class="fa fa-pencil"></i>
-					 			<span>Camilo Escalona</span>
-					 		</p>
-					 	</li>
-					 	<li>
-					 		<p>
-					 			<i class="fa fa-eye"></i>
-					 			<span>13000</span>
-					 		</p>
-					 	</li>
-					 	<li>
-					 		<p>
-					 			<i class="fa fa-share-alt"></i>
-					 			<span>300</span>
-					 		</p>
-					 	</li>
-					 </ul> 
-
-				</main>
-				<div class="more_read">leer mas</div>
-			</li>
-
-			<li>
-				<main>
-				
-					<h2>5 COSAS QUE LOS CORREDORES DEBEMOS SABER ACERCA DE LAS RODILLAS</h2>
-					<ul>
-					 	<li>
-					 		<p>
-					 			<i class="fa fa-pencil"></i>
-					 			<span>Camilo Escalona</span>
-					 		</p>
-					 	</li>
-					 	<li>
-					 		<p>
-					 			<i class="fa fa-eye"></i>
-					 			<span>13000</span>
-					 		</p>
-					 	</li>
-					 	<li>
-					 		<p>
-					 			<i class="fa fa-share-alt"></i>
-					 			<span>300</span>
-					 		</p>
-					 	</li>
-					 </ul> 
-
-				</main>
-				<div class="more_read">leer mas</div>
-			</li-->
 		</ul>
 
 	</div>

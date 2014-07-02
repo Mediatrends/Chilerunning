@@ -1,56 +1,44 @@
 <?php get_header(); ?>
-
-	<main role="main">
-		<!-- section -->
-		<section>
-
+<div class="cont_img_slider bjqs"></div>
+	<!-- section -->
+	<section class="cont_post cont_author">
+		
+		<div class="cont_author">
 		<?php if (have_posts()): the_post(); ?>
+			
+			<div class="img_author"><?php echo get_avatar(get_the_author_meta('user_email')); ?></div>
 
-			<h1><?php _e( 'Author Archives for ', 'html5blank' ); echo get_the_author(); ?></h1>
+			<h2><?php _e( 'Autor:', 'html5blank' ); ?></h2>
 
-		<?php if ( get_the_author_meta('description')) : ?>
-
-		<?php echo get_avatar(get_the_author_meta('user_email')); ?>
-
-			<h2><?php _e( 'About ', 'html5blank' ); echo get_the_author() ; ?></h2>
-
-			<?php echo wpautop( get_the_author_meta('description') ); ?>
+			<p class="nombre"><?php echo get_the_author(); ?></p>
+			<p><?php if ( get_the_author_meta('description')) : ?></p>
+<br>
+			<h2><?php _e( 'Algo sobre el autor:', 'html5blank' ); ?></h2>
+			<p><?php echo wpautop( get_the_author_meta('description') ); ?></p>
 
 		<?php endif; ?>
-
+		</div>
 		<?php rewind_posts(); while (have_posts()) : the_post(); ?>
 
-			<!-- article -->
-			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-
-				<!-- post thumbnail -->
-				<?php if ( has_post_thumbnail()) : // Check if Thumbnail exists ?>
-					<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-						<?php the_post_thumbnail(array(120,120)); // Declare pixel size you need inside the array ?>
+		<!-- article -->
+		
+				<?php $feat_image = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>
+				<article id="post-<?php the_ID(); ?>" <?php post_class('box_post'); ?> style="background-image:url(<?php echo $feat_image;?>);">
+					<a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>">
+						<main class="post">
+							<h3><?php the_title(); ?></h3>
+							<div class="data">
+								<i class="fa fa-calendar-o"></i>
+								<span> <?php the_time('d/j/Y'); ?></span>
+								<i class="fa fa-share-alt"></i>
+								<span>300</span>
+							</div>
+							<div class="more">leer mas</div>
+						</main>
 					</a>
-				<?php endif; ?>
-				<!-- /post thumbnail -->
+				</article>
 
-				<!-- post title -->
-				<h2>
-					<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
-				</h2>
-				<!-- /Post title -->
-
-				<!-- post details -->
-				<span class="date"><?php the_time('F j, Y'); ?> <?php the_time('g:i a'); ?></span>
-				<span class="author"><?php _e( 'Published by', 'html5blank' ); ?> <?php the_author_posts_link(); ?></span>
-				<span class="comments"><?php comments_popup_link( __( 'Leave your thoughts', 'html5blank' ), __( '1 Comment', 'html5blank' ), __( '% Comments', 'html5blank' )); ?></span>
-				<!-- /post details -->
-
-				<?php html5wp_excerpt('html5wp_index'); // Build your custom callback length in functions.php ?>
-
-				<br class="clear">
-
-				<?php edit_post_link(); ?>
-
-			</article>
-			<!-- /article -->
+		<!-- /article -->
 
 		<?php endwhile; ?>
 
@@ -68,10 +56,17 @@
 
 			<?php get_template_part('pagination'); ?>
 
-		</section>
-		<!-- /section -->
-	</main>
-
-<?php get_sidebar(); ?>
+	</section>
+	<!-- /section -->
+	<section class="ad">
+		<div class="open_close_ad">
+			<span class="close">Cerrar Publicidad</span>
+			<span class="open hide">Abrir Publicidad</span>
+			<i class="fa fa-times"></i>
+		</div>
+		<div class="cont_ad_middle">
+			<div class="ad-300x250" id="content_300x250"></div>
+		</div>
+	</section>
 
 <?php get_footer(); ?>
