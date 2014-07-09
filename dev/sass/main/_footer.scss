@@ -107,16 +107,24 @@
 		.btn{
 			background: {color:#fff;}
 			@include border-radius(5px);
-			padding:10px 0;
 			margin: 10px 0;
 			max-width:203px;
-			color:$pri_color;
 			font: {family:$font_ubuntu;weight:300;size:11px}
 			text:{transform:uppercase;}
 			@extend .text-center;
+			a{
+				color:$pri_color;
+				display: block;
+				padding:10px 0;
+				width:100%;
+				text:{decoration:none;}
+				&:hover{
+					color:#fff;
+				}
+			}
 			&:hover{
 				background: {color:$sec_color;}
-				color:#fff;
+				
 			}
 		}
 	}

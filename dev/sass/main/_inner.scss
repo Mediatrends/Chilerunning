@@ -27,7 +27,7 @@
 				color:$pri_color;
 				text:{decoration:none;}
 			}
-			@include gridle_state(phoness){
+			@include gridle_state(phoness) {
 				.shared_hide{
 					display: none;
 				}
@@ -40,6 +40,25 @@
 				i{
 					color:#fff;
 					margin-right:5px; 
+				}
+				span{
+					&.count_share{
+						a{
+							&.addthis_button_expanded{
+								color:$pri_color;
+								font:{size:20px;}
+								background:{image:none;};
+								@extend .margins;
+								@extend .paddings;
+								width:auto;
+								height: auto;
+								line-height: 0;
+							}
+							&.addthis_button_compact{
+								@extend .hide;
+							}
+						}
+					}
 				}
 			}
 		}
@@ -99,18 +118,14 @@
 		@include gridle(12, tabletss);
 		@include gridle(8, desktopess);
 		padding:{top:0;bottom:30px;}
-		.addthis_toolbox{
-			@extend .hide;
-		}
 		.shared{
 			@include gridle(12);
 			@include gridle_parent();
 			padding:{top:20px;bottom:10px;}
 			.addthis_toolbox{
-				display: block !important;
-				width:442px;
 				@include gridle_float(left);
 				a{
+					text:{decoration:none;}
 					&.addthis_button_facebook{
 						@extend .text-left;
 						background:{color:#3B5998;}
@@ -119,17 +134,37 @@
 						@include gridle_float(left);
 						width:211px;
 						font:{size:12px;family:$font_ubuntu;weight:300;}
-						text:{transform:uppercase;decoration:none;}
+						text:{transform:uppercase;}
 						color:#fff;
-						margin:{right:10px;}
+						margin:{right:10px;} 
 						span{
 							display: block;
 							padding:{top:3px;}
+						}
+						@include gridle_state(phoness){
+							text-align: center;
+							padding-bottom:7px;
+							width: 40px;
+							span{
+								display: none;
+							}
 						}
 					}
 					&.addthis_button_twitter{
 						@extend .addthis_button_facebook;
 						background:{color:#1DCAFF;}
+					}
+					&.addthis_button_compact{
+						@include gridle_float(left);
+						@include border-radius(5px);
+						background:{color:$pri_color;}
+						color:#fff;
+						padding:12px;
+						display: table;
+						i{
+							display: table-cell;
+							vertical-align: middle;
+						}
 					}
 				}
 			}
@@ -144,46 +179,6 @@
 				}
 				@include gridle_state(phoness){
 					float: none;
-				}
-			}
-			.btn_facebook{
-				@extend .text-left;
-				background:{color:#3B5998;}
-				@include border-radius(5px);
-				padding:{top:10px;bottom:10px;}
-				@include gridle_float(left);
-				width:211px;
-				font:{size:12px;family:$font_ubuntu;weight:300;}
-				text:{transform:uppercase;}
-				color:#fff;
-				margin:{right:10px;} 
-				span{
-					display: block;
-					padding:{top:3px;}
-				}
-				@include gridle_state(phoness){
-					text-align: center;
-					padding-bottom:7px;
-					width: 40px;
-					span{
-						display: none;
-					}
-				}
-			}
-			.btn_twitter{
-				@extend .btn_facebook;
-				background:{color:#1DCAFF;}
-			}
-			.btn_more{
-				@include gridle_float(left);
-				@include border-radius(5px);
-				background:{color:$pri_color;}
-				color:#fff;
-				padding:12px;
-				display: table;
-				i{
-					display: table-cell;
-					vertical-align: middle;
 				}
 			}
 			.count_share{
@@ -214,8 +209,17 @@
 				}
 			}
 			.back{
-				@extend .btn_more;
 				@include gridle_float(right);
+				@include border-radius(5px);
+				background:{color:$pri_color;}
+				color:#fff;
+				padding:12px;
+				display: table;
+				i{
+					display: table-cell;
+					vertical-align: middle;
+				}
+				
 			}
 		}
 		p{

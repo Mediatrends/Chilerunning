@@ -1,5 +1,5 @@
 <!doctype html>
-<html <?php language_attributes(); ?> class="no-js">
+<html <?php language_attributes(); ?> class="no-js" itemscope itemtype="http://schema.org/Article">
 	<head>
 		<meta charset="<?php bloginfo('charset'); ?>">
 		<title><?php wp_title(''); ?><?php if(wp_title('', false)) { echo ' :'; } ?> <?php bloginfo('name'); ?></title>
@@ -11,6 +11,33 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="<?php bloginfo('description'); ?>">
+
+		<!-- Schema.org markup for Google+ -->
+		<meta itemprop="name" content="<?php wp_title(''); ?><?php if(wp_title('', false)) { echo ' :'; } ?> <?php bloginfo('name'); ?>">
+		<meta itemprop="description" content="">
+		<meta itemprop="image" content="">
+
+		<!-- Twitter Card data -->
+		<meta name="twitter:card" content="summary">
+		<meta name="twitter:site" content="@chilerunning">
+		<meta name="twitter:title" content="<?php wp_title(''); ?><?php if(wp_title('', false)) { echo ' :'; } ?> <?php bloginfo('name'); ?>">
+		<meta name="twitter:description" content="">
+		<!--meta name="twitter:creator" content="@author_handle"-->
+		<!-- Twitter summary card with large image must be at least 280x150px -->
+		<meta name="twitter:image:src" content="">
+
+		<!-- Open Graph data -->
+		<meta property="og:title" content="<?php wp_title(''); ?><?php if(wp_title('', false)) { echo ' :'; } ?> <?php bloginfo('name'); ?>" />
+		<meta property="og:type" content="article" />
+		<meta property="og:url" content="<?php the_permalink() ?>" />
+		<meta property="og:image" content="" />
+		<meta property="og:description" content="<?php bloginfo('description'); ?>" />
+		<meta property="og:site_name" content="Chile Running" />
+		<meta property="article:published_time" content="<?php the_time('j F Y'); ?>" />
+		<!--meta property="article:modified_time" content="" /-->
+		<!--meta property="article:section" content="Article Section"/-->
+		<meta property="article:tag" content="<?php $posttags = get_the_tags();if ($posttags) {foreach($posttags as $tag) {echo $tag->name . ','; }}?>" />
+		<!--meta property="fb:admins" content="Facebook numberic ID" /--> 
 
 		<?php wp_head(); ?>
 		

@@ -89,8 +89,8 @@
 			  </div>
 			  <div class="contact">
 			    <h4>CONTACTANOS</h4>
-			    <div class="btn">CONTACTO EDITOR</div>
-			    <div class="btn">CONTACTO PUBLICITARIO</div>
+			    <div class="btn"><a href="mailto:editor@chilerunning.com">CONTACTO EDITOR</a></div>
+			    <div class="btn"><a href="mailto:alvaro@mediatrends.cl">CONTACTO PUBLICITARIO</a></div>
 			  </div>
 			</footer>
 			<!-- /footer -->

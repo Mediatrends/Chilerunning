@@ -77,4 +77,7 @@ jQuery(document).ready(function($){
         $(this).data('ads_box', !state);
     });
 
+
+    //addthis counter
+    addthis.counter(".atcounter");
 });
