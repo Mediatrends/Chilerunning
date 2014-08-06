@@ -72,29 +72,20 @@
 			li{
 				padding:0 14px;
 				background: {image:url(#{$url_path}icons_nav.gif);repeat:no-repeat;}
-				&.entretenimiento{
-					background: {position:70px 0;}
+				&#menu-item-72{
+					background: {position:55px 0;}
 				}
-				&.zapatillas{
-					background: {position:-90px 0;}
+				&#menu-item-73{
+					background: {position:-87px 0;}
 				}
-				&.salud{
-					background: {position:-192px 0;}
+				&#menu-item-74{
+					background: {position:-485px 0;}
 				}
-				&.nutricion{
-					background: {position:-260px 0;}
+				&#menu-item-75{
+					background: {position:-241px 0;}
 				}
-				&.calendario{
-					background: {position:-363px 0;}
-				}
-				&.motivacion{
-					background: {position:-476px 0;}
-				}
-				&.noticias{
-					background: {position:-599px 0;}
-				}
-				&.videos{
-					background: {position:-685px 0;}
+				&#menu-item-71{
+					background: {position:-371px 0;}
 				}
 				a{
 					text:{transform:uppercase;decoration:none;}
@@ -107,6 +98,9 @@
 					&:hover{
 						color:$sec_color;
 					}
+				}
+				&:hover{
+					background: {image:url(#{$url_path}icons_nav_hover.gif);repeat:no-repeat;}
 				}
 			}
 		}

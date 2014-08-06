@@ -10,34 +10,6 @@
 
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="description" content="<?php bloginfo('description'); ?>">
-
-		<!-- Schema.org markup for Google+ -->
-		<meta itemprop="name" content="<?php wp_title(''); ?><?php if(wp_title('', false)) { echo ' :'; } ?> <?php bloginfo('name'); ?>">
-		<meta itemprop="description" content="">
-		<meta itemprop="image" content="">
-
-		<!-- Twitter Card data -->
-		<meta name="twitter:card" content="summary">
-		<meta name="twitter:site" content="@chilerunning">
-		<meta name="twitter:title" content="<?php wp_title(''); ?><?php if(wp_title('', false)) { echo ' :'; } ?> <?php bloginfo('name'); ?>">
-		<meta name="twitter:description" content="">
-		<!--meta name="twitter:creator" content="@author_handle"-->
-		<!-- Twitter summary card with large image must be at least 280x150px -->
-		<meta name="twitter:image:src" content="">
-
-		<!-- Open Graph data -->
-		<meta property="og:title" content="<?php wp_title(''); ?><?php if(wp_title('', false)) { echo ' :'; } ?> <?php bloginfo('name'); ?>" />
-		<meta property="og:type" content="article" />
-		<meta property="og:url" content="<?php the_permalink() ?>" />
-		<meta property="og:image" content="" />
-		<meta property="og:description" content="<?php bloginfo('description'); ?>" />
-		<meta property="og:site_name" content="Chile Running" />
-		<meta property="article:published_time" content="<?php the_time('j F Y'); ?>" />
-		<!--meta property="article:modified_time" content="" /-->
-		<!--meta property="article:section" content="Article Section"/-->
-		<meta property="article:tag" content="<?php $posttags = get_the_tags();if ($posttags) {foreach($posttags as $tag) {echo $tag->name . ','; }}?>" />
-		<!--meta property="fb:admins" content="Facebook numberic ID" /--> 
 
 		<?php wp_head(); ?>
 		
@@ -51,10 +23,15 @@
             tests: {}
         });
         </script>
+        <?php //TAG GOOGLE DFP ?>
 
 	</head>
 	<body <?php body_class(); ?>>
-		
+		<div id='div-gpt-ad-1405719477967-0' style="position:fixed;width:100%;height:100%;z-index:9999;">
+		<script type='text/javascript'>
+		googletag.cmd.push(function() { googletag.display('div-gpt-ad-1405719477967-0'); });
+		</script>
+		</div>
 		<?php include (TEMPLATEPATH . '/svg_graph.php'); ?>
 
 		<!-- wrapper -->
@@ -70,7 +47,13 @@
 			        </a>
 		        </div>
 		        <div class="ad_header">
-		          <div style="width:728px;height:90px;margin:0 auto;background-color:#BFDFFF;" class="cont_ad" id="header_top"></div>
+		          <div style="width:728px;height:90px;margin:0 auto;" class="cont_ad" id="header_top">
+		          	
+<!--/* OpenX iFrame Tag v2.8.11 (Rich Media - OpenX) */-->
+
+<iframe id='a6c21010' name='a6c21010' src='http://ads.adnetwork.cl/www/delivery/afr.php?resize=1&amp;zoneid=182&amp;target=_blank&amp;cb={random}&amp;ct0={clickurl}' frameborder='0' scrolling='no' width='728' height='90'><a href='http://ads.adnetwork.cl/www/delivery/ck.php?n=a9ecc9b4&amp;cb={random}' target='_blank'><img src='http://ads.adnetwork.cl/www/delivery/avw.php?zoneid=182&amp;cb={random}&amp;n=a9ecc9b4&amp;ct0={clickurl}' border='0' alt='' /></a></iframe>
+
+		          </div>
 		        </div>
 
 		        <div class="control_header">
