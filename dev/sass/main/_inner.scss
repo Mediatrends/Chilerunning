@@ -263,6 +263,7 @@
 	}
 	aside{
 		@include gridle(4);
+		@include gridle(12, phoness);
 		.weather{
 			@include gridle(12);
 			#wpc-weather{
@@ -298,6 +299,52 @@
 						.day{
 							@extend .hide;
 						}
+					}
+				}
+			}
+		}
+	}
+	.box_post{
+		@include gridle(12);
+		@include gridle_parent();
+		height: 95px;
+		margin:{bottom:20px;}
+		a{
+			.post{
+				@include gridle(12);
+				@include gridle_parent();
+				h3{
+					font:{size:20px;}
+					margin:{bottom:10px;top:0;}
+				}
+				.data{
+					@include gridle(8);
+					@include gridle_parent();
+					.data_event{
+						margin:{top:10px;}
+						i{
+							font:{size:30px;}
+						}
+						span{
+							font:{size:20px;weight:300;}
+							text:{transform:uppercase;}
+							color:$pri_color;
+						}
+					}
+				}
+				.more{
+					width:38px;
+					height:38px;
+					@include gridle_float(right);
+					background:{color:$sec_color;}
+					display: table;
+					@include border-radius(5px);
+					i{
+						display: table-cell;
+						vertical-align: middle;
+						color:#fff;
+						@extend .text-center;
+						font:{size:28px;}
 					}
 				}
 			}

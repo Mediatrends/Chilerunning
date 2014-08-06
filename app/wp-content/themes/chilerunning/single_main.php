@@ -73,9 +73,12 @@
 
 				<div class="back" OnClick="window.history.back()"><i class="fa fa-chevron-left"></i></div>
 			</div>
+
 			<?php the_content(); // Dynamic Content ?>
+
 			<div class="tags"><i class="fa fa-tag"></i><?php the_tags( __( '', 'html5blank' ), ' ', ''); // Separated by commas with a line break at the end ?></div>
 			<div class="date"><?php the_time('j F Y'); ?></div>
+			
 		</article>
 
 		<?php get_sidebar('main'); ?>

@@ -39,7 +39,7 @@
 </section>
 <section class="cont_post">
 
-	<?php get_template_part('loop_salud_nutricion'); ?>
+	<?php get_template_part('loop-salud_nutricion'); ?>
 
 </section>
 <?php get_footer(); ?>

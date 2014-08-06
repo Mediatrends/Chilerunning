@@ -1,4 +1,4 @@
-<?php $query = new WP_Query('category_name=-salud_nutricion'); ?>
+<?php $query = new WP_Query('category_name=-salud-nutricion'); ?>
 	<?php if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
 	
 	<?php $feat_image = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>

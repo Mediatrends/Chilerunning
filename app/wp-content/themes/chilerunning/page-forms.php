@@ -40,7 +40,7 @@
 <section class="inner_contact">
 	
 	<article class="post_content">
-		<?php the_field('form_contacto'); ?>
+		<?php the_field('form-contacto'); ?>
 	</article>
 	
 

@@ -39,7 +39,7 @@
 </section>
 <section class="cont_post">
 
-	<?php get_template_part('loop_entrenamiento'); ?>
+	<?php get_template_part('loop-entrenamiento'); ?>
 
 </section>
 <?php get_footer(); ?>

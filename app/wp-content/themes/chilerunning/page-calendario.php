@@ -27,6 +27,7 @@
 
 	</div>
 </section>
+
 <section class="ad">
 	<div class="open_close_ad">
 		<span class="close">Cerrar Publicidad</span>
@@ -37,9 +38,10 @@
 		<div class="ad-300x250" id="content_300x250"></div>
 	</div>
 </section>
+
 <section class="cont_post">
 
-	<?php get_template_part('loop_calendario'); ?>
+	<?php get_template_part('loop-calendario'); ?>
 
 </section>
-<?php get_footer(); ?>
+<?php get_footer('calendario'); ?>

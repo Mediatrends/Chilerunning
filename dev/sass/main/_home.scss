@@ -227,6 +227,48 @@
 			}
 		}
 	}
+	aside{
+		@include gridle(4);
+		.weather{
+			@include gridle(12);
+			#wpc-weather{
+				&.wpc-26{
+					font:{family:$font_ubuntu;}
+					color:$pri_color;
+					.now{
+						@include gridle(12);
+						.time_symbol{
+							@include gridle(6);
+							svg{
+								g{
+									fill:$pri_color;
+								}
+							}
+						}
+						.time_temperature{
+							@include gridle(6);
+							margin:{top:45px;}
+							font:{size:55px;}
+							@extend .text-right;
+						}
+						.location_name{
+							@extend .hide;
+						}
+					}
+					.short_condition{
+						@include gridle(6);
+						text:{transform:capitalize;}
+					}
+					.today{
+						@include gridle(6);
+						.day{
+							@extend .hide;
+						}
+					}
+				}
+			}
+		}
+	}
 }
 .calendar{
 	@extend .cont_post;
@@ -267,6 +309,7 @@
 				color:$pri_color;
 				@include gridle(6);
 				@include gridle_parent();
+				margin:{bottom:10px;}
 			}
 			.place{
 				@include gridle(7);

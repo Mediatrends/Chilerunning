@@ -40,7 +40,7 @@
 </section>
 <section class="cont_post">
 	
-	<?php get_template_part('loop_motivacion'); ?>
+	<?php get_template_part('loop-motivacion'); ?>
 
 </section>
 <?php get_footer(); ?>
