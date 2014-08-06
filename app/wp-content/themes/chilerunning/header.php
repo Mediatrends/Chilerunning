@@ -23,15 +23,26 @@
             tests: {}
         });
         </script>
+
         <?php //TAG GOOGLE DFP ?>
+        <script type='text/javascript'>
+		var googletag = googletag || {};
+		googletag.cmd = googletag.cmd || [];
+		(function() {
+		var gads = document.createElement('script');
+		gads.async = true;
+		gads.type = 'text/javascript';
+		var useSSL = 'https:' == document.location.protocol;
+		gads.src = (useSSL ? 'https:' : 'http:') + 
+		'//www.googletagservices.com/tag/js/gpt.js';
+		var node = document.getElementsByTagName('script')[0];
+		node.parentNode.insertBefore(gads, node);
+		})();
+		</script>
 
 	</head>
 	<body <?php body_class(); ?>>
-		<div id='div-gpt-ad-1405719477967-0' style="position:fixed;width:100%;height:100%;z-index:9999;">
-		<script type='text/javascript'>
-		googletag.cmd.push(function() { googletag.display('div-gpt-ad-1405719477967-0'); });
-		</script>
-		</div>
+		
 		<?php include (TEMPLATEPATH . '/svg_graph.php'); ?>
 
 		<!-- wrapper -->
