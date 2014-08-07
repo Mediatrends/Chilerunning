@@ -9,7 +9,7 @@
 		
 		<?php $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>
 
-		<article class="cont_img_slider_inner" style="background-image:url(<?php echo $url; ?>);">
+		<article id="post-<?php the_ID(); ?>" <?php post_class('cont_img_slider_inner'); ?> style="background-image:url(<?php echo $url; ?>);">
 			<header></header>
 			<main>
 			  <div class="icon_category"></div>

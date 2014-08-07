@@ -35,8 +35,6 @@
 	</div>
 	<div class="cont_ad_middle">
 		<div class="ad-300x250" id="content_300x250">
-			
-			<iframe id='a0c2a529' name='a0c2a529' src='http://ads.adnetwork.cl/www/delivery/afr.php?zoneid=184&amp;target=_blank&amp;cb={random}&amp;ct0={clickurl}' frameborder='0' scrolling='no' width='300' height='255' allowtransparency='true'><a href='http://ads.adnetwork.cl/www/delivery/ck.php?n=a22939f3&amp;cb={random}' target='_blank'><img src='http://ads.adnetwork.cl/www/delivery/avw.php?zoneid=184&amp;cb={random}&amp;n=a22939f3&amp;ct0={clickurl}' border='0' alt='' /></a></iframe>
 
 		</div>
 	</div>

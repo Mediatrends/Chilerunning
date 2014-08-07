@@ -36,10 +36,8 @@
 	<div class="cont_ad_middle">
 		<div class="ad-728x90">
 			
-
-<iframe id='a6c21010' name='a6c21010' src='http://ads.adnetwork.cl/www/delivery/afr.php?resize=1&amp;zoneid=182&amp;target=_blank&amp;cb={random}&amp;ct0={clickurl}' frameborder='0' scrolling='no' width='728' height='90'><a href='http://ads.adnetwork.cl/www/delivery/ck.php?n=a9ecc9b4&amp;cb={random}' target='_blank'><img src='http://ads.adnetwork.cl/www/delivery/avw.php?zoneid=182&amp;cb={random}&amp;n=a9ecc9b4&amp;ct0={clickurl}' border='0' alt='' /></a></iframe>
-
-
+			<iframe id='a46cbcbf' name='a46cbcbf' src='http://ads.adnetwork.cl/www/delivery/afr.php?resize=1&amp;zoneid=182&amp;target=_blank&amp;cb={random}&amp;ct0={clickurl}' frameborder='0' scrolling='no' width='728' height='90'><a href='http://ads.adnetwork.cl/www/delivery/ck.php?n=abc5f5cd&amp;cb={random}' target='_blank'><img src='http://ads.adnetwork.cl/www/delivery/avw.php?zoneid=182&amp;cb={random}&amp;n=abc5f5cd&amp;ct0={clickurl}' border='0' alt='' /></a></iframe>
+		
 		</div>
 	</div>
 </section>

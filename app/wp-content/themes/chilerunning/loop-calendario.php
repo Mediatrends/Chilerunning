@@ -29,8 +29,6 @@
 			<div class="back" OnClick="window.history.back()"><i class="fa fa-chevron-left"></i></div>
 		</div>
 		
-		<h2>titulo corridas</h2>
-		<p>parrafa intro en corridas</p>
 
 		<?php $query = new WP_Query('category_name=-calendario'); ?>
 			<?php if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>

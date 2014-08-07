@@ -66,10 +66,30 @@
 		position:relative;
 		.icon_category{
 			@include border-radius(5px);
-			background:{color:$sec_color;}
+			background:{color:$sec_color;image:url(#{$url_path}icons_category.gif);repeat:no-repeat;}
 			width:48px;
 			height:48px;
 			margin:-10px auto 0;
+		}
+	}
+	.category-entrenamiento{
+		.icon_category{
+			background:{position:12px center;}
+		}
+	}
+	.category-motivacion{
+		.icon_category{
+			background:{position:-510px center;}
+		}
+	}
+	.category-equipamiento{
+		.icon_category{
+			background:{position:-120px center;}
+		}
+	}
+	.category-salud-nutricion{
+		.icon_category{
+			background:{position:-288px center;}
 		}
 	}
 	footer{
