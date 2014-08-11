@@ -15,6 +15,7 @@
 		
 		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/bjqs.css"/>
 		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"/>
+		
 		<script>
         // conditionizr.com
         // configure environment tests

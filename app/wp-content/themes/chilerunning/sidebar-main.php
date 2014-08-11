@@ -11,7 +11,7 @@
 		<?php echo do_shortcode('[wpc-weather id="26"]'); ?>
 
 	</div>
-	<div class="ad_sidebar text-center" style="clear:both;">
+	<div class="ad_sidebar text-center">
 		<!-- 300x250_CR_sidebar_2 -->
 		<div id='div-gpt-ad-1406309379089-1'>
 		<script type='text/javascript'>

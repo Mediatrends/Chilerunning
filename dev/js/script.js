@@ -1,23 +1,49 @@
+//validacion formulario de busqueda
+function LimpiaEspacios(Obj){
+  var texto = Obj.value;
+  //limpiamos de espacios en blanco el texto
+  var texto_limpio = texto.replace(/^\s+|\s+$/g,"");
+  if (texto_limpio===""){
+  Obj.value = "";
+  Obj.focus();
+  return true;
+}
+  else
+  {
+  return false;
+  }
+}
+
+function valida_form(){
+  if (LimpiaEspacios(document.frm.s)){
+    jQuery('#search_input').css('border','#2A378F solid 1px').attr("placeholder", "Busca algo en nuestro blog");
+  return false;
+  }
+  return true;
+}
 jQuery(document).ready(function($){
 	//main scripts
+
+   $(window).load(function(){
+       $('.header').removeClass('bg_header_closer').addClass('bg_header');
+            
+        $('.header').animate({
+            height:'295px'
+        },1200);
+
+        $('.slider_head').animate({
+            marginTop:0
+        },1200);
+
+         $('#tools_open, #menu_open').animate({
+            marginTop:30,
+            opacity:1
+        },500);
+    });
         //OPEN AND CLOSE HEADER
 	$(".enter_menu svg").click(function(){
         var state = $(this).data('toggleState');
         if(state){
-
-            $('.header').removeClass('bg_header').addClass('bg_header_closer');
-            $('#tools_open, #menu_open').animate({
-            		marginTop:0,
-            		opacity:0
-            },500);
-            $('.header').animate({
-                height:'120px'
-            },1200);                   
-            $('.slider_head').animate({
-                 marginTop:'-120px'
-            },1200);
-
-        } else {
 
             $('.header').removeClass('bg_header_closer').addClass('bg_header');
             
@@ -33,6 +59,21 @@ jQuery(document).ready(function($){
                 marginTop:30,
                 opacity:1
             },500);
+            
+
+        } else {
+
+            $('.header').removeClass('bg_header').addClass('bg_header_closer');
+            $('#tools_open, #menu_open').animate({
+                    marginTop:0,
+                    opacity:0
+            },500);
+            $('.header').animate({
+                height:'120px'
+            },1200);                   
+            $('.slider_head').animate({
+                 marginTop:'-120px'
+            },1200);
 
         }
         $(this).data('toggleState', !state);

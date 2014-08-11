@@ -323,6 +323,10 @@
 				}
 			}
 		}
+		.ad_sidebar{
+			margin-bottom: 10px;
+			@include gridle_clear(both);
+		}
 	}
 	.box_post{
 		@include gridle(12);
