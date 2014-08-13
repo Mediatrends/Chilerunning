@@ -19,7 +19,7 @@
 			      <p><i class="fa fa-pencil"></i><span><?php the_author_posts_link(); ?></span></p>
 			    </li>
 			    <li>
-			      <p><i class="fa fa-eye"></i><span><?php echo do_shortcode('[google_top_content pageviews="5" catfilter="3173" contentfilter="post" number="10" showhome="no" time="2628000"]'); ?></span></p>
+			      <p><i class="fa fa-eye"></i><span><?php //echo do_shortcode('[google_top_content pageviews="5" catfilter="3173" contentfilter="post" number="10" showhome="no" time="2628000"]'); ?></span></p>
 			    </li>
 			    <li class="shared_hide">
 			      <p><i class="fa fa-share-alt"></i><span class="count_share"><a class="atcounter"></a></span></p>
