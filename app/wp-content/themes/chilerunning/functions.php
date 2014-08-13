@@ -450,17 +450,16 @@ function html5_shortcode_demo_2($atts, $content = null) // Demo Heading H2 short
 }
 
 // post views
-function setAndViewPostViews($postID) {
-    $count_key = 'views';
-    $count = get_post_meta($postID, $count_key, true);
-    if($count==''){
-        $count = 0;
-        delete_post_meta($postID, $count_key);
-        add_post_meta($postID, $count_key, '0');
-    }else{
-        $count++;
-        update_post_meta($postID, $count_key, $count);
+add_filter( 'gtc_pages_filter', 'gtc_add_viewcount_title' );
+function gtc_add_viewcount_title( $pages ) {
+
+    if ( !$pages )
+        return false;
+    // loop through the pages
+    foreach ( $pages as $key => $page ) {
+        // and add the page count to the title value
+        $pages[$key]['children']['value'] = $pages[$key]['children']['value'] . ' ['. $pages[$key]['children']['children']['ga:pageviews'] .' Views]';
     }
-    return $count; /* so you can show it */
+    return $pages;
 }
 ?>

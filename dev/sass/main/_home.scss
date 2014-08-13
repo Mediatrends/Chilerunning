@@ -14,7 +14,7 @@
 			.bjqs-slide{
 				height: 260px !important;
 				padding-top:180px;
-				background: {size:cover;}
+				background: {size:cover;position: center}
 				list:{style:none;}
 				@extend .margins;
 				@include gridle_state(phoness){

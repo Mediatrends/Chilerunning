@@ -3,7 +3,7 @@
 	
 	<?php $feat_image = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>
 	
-	<li class="cont_post_slider" style="background-image:url(<?php echo $feat_image;?>) !important;">
+	<li id="post-<?php the_ID(); ?>" <?php post_class('cont_post_slider'); ?> style="background-image:url(<?php echo $feat_image;?>) !important;">
 		<main>
 		
 			<h2><?php the_title(); ?></h2>
