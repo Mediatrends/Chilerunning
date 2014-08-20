@@ -25,25 +25,33 @@ jQuery(document).ready(function($){
 	//main scripts
 
    $(window).load(function(){
-       $('.header').removeClass('bg_header_closer').addClass('bg_header');
-            
-        $('.header').animate({
-            height:'295px'
-        },1200);
+      $('.linea_01').addClass('linea_01_crux');  
+      $('.linea_03').addClass('linea_03_crux'); 
+      $('.linea_02').fadeOut(); 
 
-        $('.slider_head').animate({
-            marginTop:0
-        },1200);
+      $('.header').removeClass('bg_header_closer').addClass('bg_header');
+          
+      $('.header').animate({
+          height:'295px'
+      },1200);
 
-         $('#tools_open, #menu_open').animate({
-            marginTop:30,
-            opacity:1
-        },500);
+      $('.slider_head').animate({
+          marginTop:0
+      },1200);
+
+       $('#tools_open, #menu_open').animate({
+          marginTop:30,
+          opacity:1
+      },500);
     });
         //OPEN AND CLOSE HEADER
-	$(".enter_menu svg").click(function(){
+	$("#icon_menu").click(function(){
         var state = $(this).data('toggleState');
         if(state){
+
+            $('.linea_01').removeClass('linea_01_crux_b').addClass('linea_01_crux');  
+            $('.linea_03').removeClass('linea_03_crux_b').addClass('linea_03_crux'); 
+            $('.linea_02').fadeOut();
 
             $('.header').removeClass('bg_header_closer').addClass('bg_header');
             
@@ -75,6 +83,9 @@ jQuery(document).ready(function($){
                  marginTop:'-120px'
             },1200);
 
+            $('.linea_01').addClass('linea_01_crux_b').removeClass('linea_01_crux');  
+            $('.linea_03').addClass('linea_03_crux_b').removeClass('linea_03_crux');
+            $('.linea_02').fadeIn(3000);
         }
         $(this).data('toggleState', !state);
     });

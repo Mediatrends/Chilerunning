@@ -19,13 +19,15 @@
     </g>
   </g>
 </svg>
-<svg viewBox="0 0 80 70" class="hide">
+
+<!--svg viewBox="0 0 80 70" class="hide">
   <g id="svg_icon_menu">
-    <rect width="80" height="15"></rect>
-    <rect y="55" width="80" height="15"></rect>
-    <rect y="28" width="80" height="15"></rect>
+    <rect id="line_01" width="80" height="15"></rect>
+    <rect id="line_02" y="55" width="80" height="15"></rect>
+    <rect id="line_03" y="28" width="80" height="15"></rect>
   </g>
-</svg>
+</svg-->
+
 <svg viewBox="3.437 7.681 49.819 44.752" class="hide">
   <g id="svg_icon_google">
     <path d="M52.218,25.852h-7.512v-7.511c0-0.572-0.465-1.039-1.037-1.039H41.53c-0.576,0-1.041,0.467-1.041,1.039v7.511h-7.512c-0.572,0-1.039,0.467-1.039,1.041v2.139c0,0.574,0.467,1.039,1.039,1.039h7.512v7.514c0,0.574,0.465,1.039,1.041,1.039h2.139c0.572,0,1.037-0.465,1.037-1.039V30.07h7.512c0.572,0,1.039-0.465,1.039-1.039v-2.139C53.257,26.318,52.79,25.852,52.218,25.852z"></path>

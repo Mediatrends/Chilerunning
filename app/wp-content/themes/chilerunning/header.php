@@ -68,9 +68,12 @@
 
 		        <div class="control_header">
 		          <div class="enter_menu">
-		            <svg viewBox="0 0 80 70">
-		              <use xlink:href="#svg_icon_menu"></use>
-		            </svg>
+					<div id="icon_menu">
+						<div class="linea_01"></div>
+						<div class="linea_02"></div>
+						<div class="linea_03"></div>
+					</div>
+
 		          </div>
 		        </div>
 

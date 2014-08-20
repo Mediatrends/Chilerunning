@@ -49,14 +49,42 @@
 		.enter_menu{
 			display: table-cell;
 			vertical-align: middle;
-			svg{
+			width:100%;
+			#icon_menu{
 				@include gridle_float(right);
 				margin-right:20px;
 				display: block;
 				max-width: 30px;
+				width: 30px;
+				height: 23px;
 				cursor:pointer;
-				use{
-					fill:$pri_color;
+				@include transform-origin(center);
+				position: relative;
+				.linea_01{
+					width:30px;
+					height: 5px;
+					background:{color:$pri_color;}
+					position: absolute;
+				}
+				.linea_02{
+					@extend .linea_01;
+					top: 10px;
+				}
+				.linea_03{
+					@extend .linea_01;
+					top: 20px;
+				}
+				.linea_01_crux{
+					@include animation(1s crux1 normal forwards);
+				}
+				.linea_03_crux{
+					@include animation(1s crux2 normal forwards);
+				}
+				.linea_01_crux_b{
+					@include animation(2s crux1b normal forwards);
+				}
+				.linea_03_crux_b{
+					@include animation(2s crux2b normal forwards);
 				}
 			}
 		}

@@ -13,3 +13,21 @@
 	to{
 		background:{color:transparent;}	}
 }
+
+@include keyframe(crux1){
+	from{transform: rotate(0deg);}
+	to{transform: rotate(45deg);}
+}
+@include keyframe(crux2){
+	from{transform: rotate(0deg);top:20px;}
+	to{transform: rotate(-45deg);top:-1px;}
+}
+
+@include keyframe(crux1b){
+	from{transform: rotate(45deg);}
+	to{transform: rotate(0deg);}
+}
+@include keyframe(crux2b){
+	from{transform: rotate(-45deg);top:-1px;}
+	to{transform: rotate(0deg);top:20px;}
+}
