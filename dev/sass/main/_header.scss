@@ -35,6 +35,10 @@
 		@include gridle_show(landscapess);
 		@extend .text-center;
 		padding-top:10px;
+		.cont_ad{
+			width:728px;
+			margin:0 auto;
+		}
 	}
 	.control_header{
 		@include gridle(2);

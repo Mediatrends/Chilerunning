@@ -34,11 +34,9 @@
 		<i class="fa fa-times"></i>
 	</div>
 	<div class="cont_ad_middle">
-		<div class="ad-728x90">
-			
-			<iframe id='a46cbcbf' name='a46cbcbf' src='http://ads.adnetwork.cl/www/delivery/afr.php?resize=1&amp;zoneid=182&amp;target=_blank&amp;cb={random}&amp;ct0={clickurl}' frameborder='0' scrolling='no' width='728' height='90'><a href='http://ads.adnetwork.cl/www/delivery/ck.php?n=abc5f5cd&amp;cb={random}' target='_blank'><img src='http://ads.adnetwork.cl/www/delivery/avw.php?zoneid=182&amp;cb={random}&amp;n=abc5f5cd&amp;ct0={clickurl}' border='0' alt='' /></a></iframe>
-		
-		</div>
+
+		<?php include (TEMPLATEPATH . '/ad_contall_728.php'); ?>
+
 	</div>
 </section>
 <section class="cont_post">

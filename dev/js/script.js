@@ -21,6 +21,17 @@ function valida_form(){
   }
   return true;
 }
+
+var feed = new Instafeed({
+    get: 'user',
+    userId:1185907970,
+    accessToken:'641827348.467ede5.82e872aed9ed4959a3ee985d62781c51',
+    clientId: '6ef6cd1298744e25866491b2d2842503',
+    template:'<a href="{{link}}" target="_blank"><div class="cont_igfeed"><img src="{{image}}" alt="" /></div></a>',
+    limit:6
+});
+feed.run();
+
 jQuery(document).ready(function($){
 	//main scripts
 

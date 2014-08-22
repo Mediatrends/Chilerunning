@@ -10,7 +10,8 @@
 
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+		
+		<script src="<?php echo get_template_directory_uri(); ?>/js/instafeed.min.js"></script>
 		<?php wp_head(); ?>
 		
 		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/bjqs.css"/>
@@ -59,11 +60,9 @@
 			        </a>
 		        </div>
 		        <div class="ad_header">
-		          <div style="width:728px;height:90px;margin:0 auto;" class="cont_ad" id="header_top">
 
-						<iframe id='a6c21010' name='a6c21010' src='http://ads.adnetwork.cl/www/delivery/afr.php?resize=1&amp;zoneid=182&amp;target=_blank&amp;cb={random}&amp;ct0={clickurl}' frameborder='0' scrolling='no' width='728' height='90'><a href='http://ads.adnetwork.cl/www/delivery/ck.php?n=a9ecc9b4&amp;cb={random}' target='_blank'><img src='http://ads.adnetwork.cl/www/delivery/avw.php?zoneid=182&amp;cb={random}&amp;n=a9ecc9b4&amp;ct0={clickurl}' border='0' alt='' /></a></iframe>
+		          <div class="cont_ad"></div>
 
-		          </div>
 		        </div>
 
 		        <div class="control_header">
