@@ -13,9 +13,12 @@ module.exports = function(grunt) {
 		uglify: {
 	      dist: {
 	        files: {
-	          'app/wp-content/themes/chilerunning/js/scripts.min.js': [
-	            'dev/js/script.js'
-	          ]
+		          'app/wp-content/themes/chilerunning/js/scripts.min.js':[
+		            'dev/js/script.js'
+		        ],
+		          'app/wp-content/themes/chilerunning/js/adstag.min.js':[
+		        	'dev/js/ads_tag.js'
+		        ]
 	        }
 	      }
 	    },

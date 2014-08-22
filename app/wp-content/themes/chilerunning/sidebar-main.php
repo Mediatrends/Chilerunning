@@ -1,23 +1,26 @@
- <aside>
+<aside>
 	<div class="weather">
 		
 		<?php echo do_shortcode('[wpc-weather id="26"]'); ?>
 
 	</div>
 	<div class="ad_sidebar text-center">
-
+		
+		<!-- 300x250_CR_sidebar -->
+		<div id='div-gpt-ad-1408742889084-1'>
 		<script type='text/javascript'>
-			googletag.cmd.push(function() {
-			googletag.defineSlot('/92947493/300x250_CR_sidebar_2', [300, 250], 'div-gpt-ad-1406309379089-1').addService(googletag.pubads());
-			googletag.pubads().enableSingleRequest();
-			googletag.enableServices();
-			});
+		googletag.display('div-gpt-ad-1408742889084-1');
 		</script>
-		<!-- 300x250_CR_sidebar_2 -->
-		<div id='div-gpt-ad-1406309379089-1'>
-			<script type='text/javascript'>
-			googletag.cmd.push(function() { googletag.display('div-gpt-ad-1406309379089-1'); });
-			</script>
+		</div>
+
+	</div>
+	<div class="ad_sidebar text-center">
+		
+		<!-- 300x250_CR -->
+		<div id='div-gpt-ad-1408742889084-0'>
+		<script type='text/javascript'>
+		googletag.display('div-gpt-ad-1408742889084-0');
+		</script>
 		</div>
 
 	</div>

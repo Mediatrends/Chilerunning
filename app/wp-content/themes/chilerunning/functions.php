@@ -100,6 +100,9 @@ function html5blank_header_scripts()
 
         wp_register_script('html5blankscripts', get_template_directory_uri() . '/js/scripts.min.js', array('jquery'), '1.0.0'); // Custom scripts
         wp_enqueue_script('html5blankscripts'); // Enqueue it!
+
+        wp_register_script('html5blankscripts2', get_template_directory_uri() . '/js/adstag.min.js' ); // Custom scripts
+        wp_enqueue_script('html5blankscripts2'); // Enqueue it!
     }
 }
 

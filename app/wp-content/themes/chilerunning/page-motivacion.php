@@ -33,8 +33,8 @@
 		<i class="fa fa-times"></i>
 	</div>
 	<div class="cont_ad_middle">
-		<div class="ad-300x250" id="content_300x250">
-			
+		<div class="ad-300x250">
+			<?php include (TEMPLATEPATH . '/ad_contall_300x250.php'); ?>
 		</div>
 	</div>
 </section>
