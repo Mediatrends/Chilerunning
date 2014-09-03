@@ -59,22 +59,27 @@
 			    <h4>nosotros</h4>
 			    <p> <?php bloginfo('description'); ?> </p>
 			    <ul class="redes">
-			      <li><a href="#">
-			          <svg viewBox="3.437 7.681 49.819 44.752">
-			            <use xlink:href="#svg_icon_google"></use>
-			          </svg></a></li>
-			      <li><a href="#">
-			          <svg viewBox="8.623 8 7.001 9.043">
-			            <use xlink:href="#svg_icon_pinterest"></use>
-			          </svg></a></li>
-			      <li><a href="#">
-			          <svg viewBox="19 22 29 23.999">
-			            <use xlink:href="#svg_icon_twitter"></use>
-			          </svg></a></li>
-			      <li><a href="#">
-			          <svg viewBox="25.396 17.68 15.208 32.638">
-			            <use xlink:href="#svg_icon_facebook"></use>
-			          </svg></a></li>
+			    	<li>
+						<a href="http://twitter.com/chilerunningscl" target="_blank">
+						  <svg viewBox="19 22 29 23.999">
+						    <use xlink:href="#svg_icon_twitter"></use>
+						  </svg>
+						</a>
+					</li>
+					<li>
+						<a href="http://facebook.com/chilerunningscl" target="_blank">
+						  <svg viewBox="25.396 17.68 15.208 32.638">
+						    <use xlink:href="#svg_icon_facebook"></use>
+						  </svg>
+						</a>
+					</li>
+					<li>
+						<a href="http://instagram.com/chilerunning" target="_blank">
+						  <svg viewBox="0 0 100 100">
+						    <use xlink:href="#svg_icon_instagram"></use>
+						  </svg>
+						</a>
+					</li>
 			    </ul>
 			  </div>
 			  <div class="category">

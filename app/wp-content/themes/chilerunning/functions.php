@@ -451,18 +451,5 @@ function html5_shortcode_demo_2($atts, $content = null) // Demo Heading H2 short
 {
     return '<h2>' . $content . '</h2>';
 }
-
-// post views
-add_filter( 'gtc_pages_filter', 'gtc_add_viewcount_title' );
-function gtc_add_viewcount_title( $pages ) {
-
-    if ( !$pages )
-        return false;
-    // loop through the pages
-    foreach ( $pages as $key => $page ) {
-        // and add the page count to the title value
-        $pages[$key]['children']['value'] = $pages[$key]['children']['value'] . ' ['. $pages[$key]['children']['children']['ga:pageviews'] .' Views]';
-    }
-    return $pages;
-}
 ?>
+

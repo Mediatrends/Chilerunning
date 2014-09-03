@@ -131,7 +131,10 @@
 .inner_cont{
 	@include gridle_clear(both);
 	@include gridle_parent();
-	@include gridle(12);
+	@include gridle(12, phoness);
+	@include gridle(12, tabletss);
+	@include gridle(10, desktopess);
+	@include gridle_push(1, desktopess);
 	.post_content{
 		@include gridle(8);
 		@include gridle(12, phoness);
@@ -249,7 +252,8 @@
 			text:{align:justify;}
 			line:{height:21px;}
 			img{
-				@extend .responsive-img;
+				width:100%;
+				height: auto;
 			}
 		}
 		.tags{
@@ -283,8 +287,9 @@
 		}
 	}
 	aside{
-		@include gridle(4);
 		@include gridle(12, phoness);
+		@include gridle(12, tabletss);
+		@include gridle(4, desktopess);
 		.weather{
 			@include gridle(12);
 			#wpc-weather{
@@ -325,8 +330,18 @@
 			}
 		}
 		.ad_sidebar{
-			margin-bottom: 10px;
+			width:300px;
 			@include gridle_clear(both);
+			@include gridle_state(phoness) {
+				float:left;
+			}
+			@include gridle_state(tabletss) {
+				float:left;
+			}
+			@include gridle_state(desktopess) {
+				float:none;
+				margin:{top:0;left:auto;right:auto;bottom:10px;}
+			}
 		}
 	}
 	.box_post{

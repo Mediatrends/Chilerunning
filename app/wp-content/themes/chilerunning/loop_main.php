@@ -9,8 +9,6 @@
 				<div class="data">
 					<i class="fa fa-calendar-o"></i>
 					<span> <?php the_time('d/j/Y'); ?></span>
-					<i class="fa fa-share-alt"></i>
-					<span>300</span>
 				</div>
 				<div class="more">leer mas</div>
 			</main>
