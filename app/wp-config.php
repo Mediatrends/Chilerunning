@@ -1,4 +1,6 @@
 <?php
+error_reporting(1);
+@ini_set(‘display_errors’, 1);
 /** 
  * Configuración básica de WordPress.
  *
@@ -78,7 +80,7 @@ define('WPLANG', 'es_ES');
  * Se recomienda encarecidamente a los desarrolladores de temas y plugins que usen WP_DEBUG
  * en sus entornos de desarrollo.
  */
-define('WP_DEBUG', false);
+define('WP_DEBUG', true);
 
 /* ¡Eso es todo, deja de editar! Feliz blogging */
 

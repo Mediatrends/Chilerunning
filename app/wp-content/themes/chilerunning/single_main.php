@@ -19,7 +19,7 @@
 			      <p><i class="fa fa-pencil"></i><span><?php the_author_posts_link(); ?></span></p>
 			    </li-->
 			    <li>
-			      <p><i class="fa fa-eye"></i><span><?php echo gapp_get_post_pageviews(); ?></span></p>
+			      <p><i class="fa fa-eye"></i><span></span></p>
 			    </li>
 			    <li class="shared_hide">
 			      <p><i class="fa fa-share-alt"></i><span class="count_share"><a class="atcounter"></a></span></p>

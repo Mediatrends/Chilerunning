@@ -18,6 +18,7 @@
 			max-width: 628px;
 			margin:0 auto;
 			text:{transform:uppercase;}
+			@include text-shadow($pri_color 1px 1px 0);
 		}
 		ul{
 			font:{family:$font_ubuntu;weight:700;}
